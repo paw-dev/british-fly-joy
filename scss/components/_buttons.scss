@@ -1,0 +1,105 @@
+.section_read-more_button,
+.card_button {
+  @extend %secondary-font;
+  border: none;
+  font-size: 24px;
+  line-height: 117%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 16px;
+  cursor: pointer;
+  gap: 12px;
+  background-color: $color-brand-dark;
+  color: $color-text-light;
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 12px;
+    line-height: 133%;
+    padding: 12px;
+  }
+  svg {
+    path {
+      stroke: $color-text-light;
+    }
+  }
+}
+
+.card_button {
+  color: transparent;
+  svg {
+    path {
+      stroke: transparent;
+    }
+  }
+}
+
+.section_read-more_button:hover {
+  background-color: $color-brand;
+  color: $color-brand-dark;
+
+  svg {
+    path {
+      stroke: $color-brand-dark;
+    }
+  }
+}
+
+.read-more:hover {
+  background-color: $color-brand-dark;
+  color: $color-text-light;
+
+  svg {
+    path {
+      stroke: $color-text-light;
+    }
+  }
+}
+
+.trust {
+  .section_read-more_button {
+    @extend %secondary-font;
+    background-color: $color-brand;
+    color: $color-dark-green;
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 12px;
+      line-height: 133%;
+      padding: 12px;
+    }
+
+    svg {
+      path {
+        stroke: $color-dark-green;
+      }
+    }
+  }
+
+  .section_read-more_button:hover {
+    background-color: $color-brand-dark;
+    color: $color-text-light;
+
+    svg {
+      path {
+        stroke: $color-text-light;
+      }
+    }
+  }
+}
+
+.cruises {
+  .section_read-more_button {
+    border: 3px solid $color-text-light;
+  }
+
+  .section_read-more_button:hover {
+    border: 3px solid $color-brand-dark;
+    background: $color-brand-dark;
+    color: $color-text-light;
+
+    path {
+      stroke: $color-text-light;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.holidays-bg {
+  background-image: url(../../images/holidays-titel.jpeg);
+}
+.holidays_buttons {
+  padding-top: 100px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .holidays_button {
+    @extend %secondary-font;
+    font-size: 24px;
+    line-height: 117%;
+    color: $color-brand-dark;
+    background-color: transparent;
+    padding: 0 26px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(103deg, #ffe401, #007b84) 1% 1%;
+    width: 280px;
+    cursor: pointer;
+    min-height: 60px;
+  }
+}
+
+.holidays_button:hover {
+  background-color: $color-brand;
+  border-image: linear-gradient(103deg, #ffe401, #ffe401) 1% 1%;
+}
+
+.cards_holidays {
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 26px;
+}

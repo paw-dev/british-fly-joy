@@ -1,0 +1,40 @@
+@import "../../node_modules/swiper/swiper.css";
+@import "../../node_modules/swiper/swiper-bundle.css";
+
+.swiper-container {
+  overflow: hidden;
+}
+
+.swiper-container_cards {
+  // max-width: 1380px;
+  // padding: 0 20px;
+  // margin: 0 auto;
+  // position: relative;
+  display: flex;
+}
+
+//   Стрелки
+.swiper-button-prev {
+  // padding-left: 50px;
+  left: var(--swiper-navigation-sides-offset, -50px);
+}
+.swiper-button-next {
+  // padding-right: 50px;
+  right: var(--swiper-navigation-sides-offset, -50px);
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: $color-brand;
+  font-size: 80px;
+}
+
+// .wrap {
+//   padding: 30px 130px;
+// }
+
+// .cards {
+//   max-width: 1236px;
+//   padding: 0 20px;
+//   margin: 0 auto;
+//   position: relative;
+// }

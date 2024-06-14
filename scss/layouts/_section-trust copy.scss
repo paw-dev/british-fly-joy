@@ -1,0 +1,147 @@
+.trust {
+  padding-top: 48px;
+
+  .trust-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin: 100px 0;
+    padding: 119px 93px 81px;
+    column-gap: 35px;
+
+    @media screen and (max-width: $bp-mobile) {
+      margin: 24px 21px;
+      padding: 29px 24px 35px;
+    }
+
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      position: relative;
+
+      @media screen and (max-width: $bp-mobile) {
+        gap: 12px;
+      }
+
+      img {
+        @media screen and (max-width: $bp-mobile) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      span {
+        font-size: 32px;
+        line-height: 87%;
+        color: $color-dark-green;
+        @media screen and (max-width: $bp-mobile) {
+          font-size: 12px;
+          line-height: 133%;
+        }
+      }
+    }
+
+    .trust-item::before {
+      position: absolute;
+      left: -66px;
+      top: -25%;
+      z-index: -1;
+      width: 100px;
+    }
+  }
+
+  .trust-item:nth-child(1):before {
+    content: url(../../images/logos/1.svg);
+    left: -37px;
+    @media screen and (max-width: $bp-mobile) {
+      content: url(../../images/logos/1.svg);
+      width: 50px; /* Ширина изображения для мобильных устройств */
+      height: auto;
+    }
+  }
+
+  .trust-item:nth-child(2):before {
+    content: url(../../images/logos/2.svg);
+  }
+
+  .trust-item:nth-child(3):before {
+    content: url(../../images/logos/3.svg);
+  }
+
+  .trust-item:last-child::before {
+    content: url(../../images/logos/4.svg);
+  }
+}
+
+.trust-items::before,
+.trust-items::after {
+  content: "";
+  position: absolute;
+  width: 309px;
+  height: 309px;
+  border: 3px solid $color-brand;
+
+  @media screen and (max-width: $bp-mobile) {
+    width: 80px;
+    height: 80px;
+    border: 2px solid $color-brand;
+  }
+}
+
+.trust-items::before {
+  top: 0;
+  right: 0;
+  border-width: 3px 3px 0 0;
+  @media screen and (max-width: $bp-mobile) {
+    border-width: 2px 2px 0 0;
+  }
+}
+
+.trust-items::after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 3px 3px;
+  @media screen and (max-width: $bp-mobile) {
+    border-width: 0 0 2px 2px;
+  }
+}
+
+button {
+  @extend %secondary-font;
+  background-color: $color-brand;
+  border: none;
+  font-size: 24px;
+  line-height: 117%;
+  color: $color-dark-green;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 16px;
+  cursor: pointer;
+  gap: 12px;
+}
+
+button:hover {
+  background-color: $color-brand-dark;
+  border: none;
+  font-size: 24px;
+  line-height: 117%;
+  color: $color-text-light;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 16px;
+  cursor: pointer;
+  gap: 12px;
+
+  svg {
+    path {
+      stroke: $color-text-light;
+    }
+  }
+}

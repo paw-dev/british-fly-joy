@@ -1,0 +1,279 @@
+.header {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // padding-top: 16px;
+
+  // @media screen and (min-width: $bp-desktop) {
+  //   padding-top: 32px;
+  // }
+  .background-nav-top {
+    background-color: $color-brand-dark;
+  }
+
+  .container-big {
+    max-width: 1440px;
+    padding: 0 0 0 40px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+
+    .logo {
+      padding: 7px 0;
+
+      a {
+        gap: 16px;
+      }
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      .tel-numbers {
+        img {
+          height: 39px;
+          width: 46px;
+        }
+
+        a {
+          @extend %secondary-font;
+          color: $color-text-light;
+
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 24px;
+        }
+      }
+
+      .social-media {
+        display: flex;
+        gap: 24px;
+
+        a {
+          background-color: $color-brand;
+          padding: 24px;
+        }
+      }
+
+      .contact-us {
+        @extend %secondary-font;
+        color: $color-brand-dark;
+        font-size: 24px;
+        background-color: $color-brand;
+        border: none;
+        cursor: pointer;
+        padding: 28px 30px;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+      }
+      .contact-us:hover {
+        background-color: $color-text-light;
+      }
+    }
+  }
+
+  .header-image {
+    background-image: url(../../images/header-image.jpeg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .header-title {
+      margin: 0 auto;
+      padding: 152px 0 373px;
+      max-width: 745px;
+
+      @media screen and (max-width: $bp-tablet) {
+        padding: 152px 0 225px;
+        max-width: 470px;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        padding: 50px 0 81px;
+        max-width: 179px;
+      }
+
+      h1 {
+        color: $color-text-light;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        span {
+          @extend %secondary-font;
+          font-size: 64px;
+          // font-size: calc(16px + (64 - 16) * ((100vw - 480px) / (1460 - 480)));
+          // display: block;
+
+          @media screen and (max-width: $bp-tablet) {
+            font-size: 40px;
+          }
+
+          @media screen and (max-width: $bp-mobile) {
+            font-size: 16px;
+          }
+        }
+
+        span:first-child {
+          align-self: flex-start;
+        }
+        span:last-child {
+          // position: absolute;
+          // left: 54.5%;
+          // line-height: 108px;
+          align-self: flex-end;
+
+          // @media screen and (max-width: $bp-tablet) {
+          //   left: 56.5%;
+          //   line-height: 47px;
+          // }
+
+          // @media screen and (max-width: $bp-mobile) {
+          //   line-height: 25px;
+          // }
+        }
+
+        .main-header-title {
+          @extend %primary-font;
+          font-size: 200px;
+          // font-size: calc(48px + (200 - 48) * ((100vw - 480px) / (1460 - 480)));
+          -webkit-text-stroke: 3px #fff;
+          color: rgba(255, 255, 255, 0.6);
+          text-align: center;
+          margin: 0 auto;
+          align-self: center;
+
+          @media screen and (max-width: $bp-tablet) {
+            font-size: 125px;
+            -webkit-text-stroke: 1px #fff;
+          }
+
+          @media screen and (max-width: $bp-mobile) {
+            font-size: 48px;
+
+            -webkit-text-stroke: 1px #fff;
+          }
+        }
+      }
+    }
+    .background-nav-bottom {
+      padding: 22px 0;
+      background: hsla(0, 0%, 100%, 0.5);
+      @media screen and (max-width: $bp-mobile) {
+        padding: 4px 0;
+      }
+    }
+    .nav-bottom {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      column-gap: 69px;
+      row-gap: 22px;
+
+      img {
+        @media screen and (max-width: $bp-mobile) {
+          width: 244px;
+          height: 22px;
+        }
+      }
+
+      .header-menu {
+        display: flex;
+        align-items: center;
+        gap: 69px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media screen and (max-width: $bp-tablet) {
+          display: none;
+        }
+
+        li:hover .submenu {
+          display: block;
+        }
+
+        a {
+          color: $color-text-light;
+          font-size: 24px;
+          display: block;
+          outline: none;
+          transition: 0.5s linear;
+        }
+        a:hover {
+          color: $color-brand-dark;
+          text-decoration: underline $color-brand 1.5px;
+        }
+
+        .submenu {
+          display: none;
+          background: rgba(1, 124, 133, 0.75);
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: max-content;
+          z-index: 10;
+          -webkit-transition: 0.5s ease-in-out;
+          -moz-transition: 0.5s ease-in-out;
+          -o-transition: 0.5s ease-in-out;
+          transition: 0.5s ease-in-out;
+          padding: 21px 16px 0 16px;
+
+          a {
+            color: $color-text-light;
+            font-size: 24px;
+            display: block;
+            padding-bottom: 23px;
+            outline: none;
+            transition: 0.5s linear;
+          }
+        }
+      }
+
+      .header-menu > li {
+        display: inline-block;
+        position: relative;
+      }
+    }
+
+    .tta {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+
+      @media screen and (max-width: $bp-mobile) {
+        height: 52px;
+        width: 52px;
+        top: 9px;
+        right: 9px;
+      }
+    }
+  }
+}
+
+.logo {
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    @extend %primary-font;
+    color: $color-text-light;
+    font-size: 36px;
+  }
+}

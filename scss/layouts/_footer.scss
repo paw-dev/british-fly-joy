@@ -1,0 +1,112 @@
+.footer-top {
+  background-color: $color-brand-dark;
+  padding: 50px 0;
+
+  .footer_about-us {
+    padding: 0 38px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+
+    .logo {
+      a {
+        gap: 24px;
+        flex-direction: column;
+
+        img {
+          width: 104px;
+          height: 104px;
+        }
+      }
+    }
+
+    .footer_about-us_contacts {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: $color-text-light;
+      display: flex;
+      gap: 24px;
+      flex-direction: column;
+      max-width: 373px;
+      margin-left: 22px;
+    }
+    .social-media {
+      display: flex;
+      gap: 36px;
+      justify-content: space-between;
+    }
+  }
+
+  .footer_links {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+
+    ul {
+      display: flex;
+      gap: 32px;
+      flex-direction: column;
+    }
+
+    span,
+    a {
+      font-size: 24px;
+      line-height: 117%;
+      color: $color-text-light;
+    }
+
+    span {
+      margin-bottom: 32px;
+      display: inline-block;
+      text-decoration: underline $color-brand 1.5px;
+    }
+
+    a {
+      transition: 0.5s linear;
+    }
+  }
+}
+
+.footer-top > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  padding: 60px 0 30px;
+  p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: $color-dark-green;
+  }
+
+  .footer_cards {
+    margin: 48px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .trust_cards,
+    .bank_cards {
+      display: flex;
+      gap: 48px;
+    }
+  }
+
+  .copyright {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: $color-dark-green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+}
