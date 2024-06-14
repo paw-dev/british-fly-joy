@@ -189,3 +189,9 @@ table {
 a {
   text-decoration: none;
 }
+
+@media screen and (max-width: $bp-mobile) {
+  .hidden-mob {
+    display: none;
+  }
+}
