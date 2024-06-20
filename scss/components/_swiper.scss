@@ -16,11 +16,17 @@
 //   Стрелки
 .swiper-button-prev {
   // padding-left: 50px;
-  left: var(--swiper-navigation-sides-offset, -50px);
+  left: var(--swiper-navigation-sides-offset, -30px);
 }
 .swiper-button-next {
   // padding-right: 50px;
-  right: var(--swiper-navigation-sides-offset, -50px);
+  right: var(--swiper-navigation-sides-offset, -30px);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  @media screen and (max-width: 1320px) {
+    display: none;
+  }
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {

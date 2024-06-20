@@ -25,7 +25,7 @@ const swiper = new Swiper('.swiper-container_cards', {
     // Автовысота
     // autoHeight: true,
 
-    slidesPerView: 3,
+    slidesPerView: 1,
 
     // Отступы
     spaceBetween: 24,
@@ -38,15 +38,17 @@ const swiper = new Swiper('.swiper-container_cards', {
     //     disableOnnteraction: false,  
     // },
     
-    // breakpoints:{
-    //     768: {
-    //         slidesPerView: 1,
-    //     },
-        // 1024: {
-        //     slidesPerView: 3,
-        // },
-        // 1440: {
-        //     slidesPerView: 3,
-        // }
-    // }
+    breakpoints:{
+        1440: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        480: {
+            slidesPerView: 1,
+        },
+        
+        
+    }
 });

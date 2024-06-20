@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./base";
 @import "./utils/fonts";
+@import "./utils/texts";
 
 @import "./components/buttons";
 @import "./components/swiper";
@@ -17,3 +18,36 @@
 @import "./layouts/section-reviews";
 @import "./layouts/section-partners";
 @import "./layouts/footer";
+@import "./layouts/contact-us";
+
+@media screen and (max-width: $bp-tablet) {
+  .hidden-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: $bp-mobile) {
+  .hidden-mob {
+    display: none;
+  }
+}
+
+.logo {
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    @extend %primary-font;
+    color: $color-text-light;
+    font-size: 36px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 26px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+    }
+  }
+}

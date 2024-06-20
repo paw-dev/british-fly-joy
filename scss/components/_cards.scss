@@ -4,11 +4,29 @@
   // gap: 24px;
   justify-content: space-evenly;
   flex-wrap: nowrap;
+  // justify-content: center;
+
+  @media screen and (max-width: $bp-tablet) {
+    margin: 32px 0 58px;
+  }
 
   .card {
     // width: 380px;
 
     position: relative;
+    max-width: 563px;
+    // max-width: 352px;
+
+    @media screen and (max-width: $bp-tablet) {
+      max-width: 352px;
+    }
+
+    img {
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 100%;
+    }
 
     .card_discount {
       background: #ff0f00;
@@ -19,6 +37,9 @@
       font-size: 24px;
       line-height: 117%;
       color: $color-text-light;
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 18px;
+      }
     }
 
     .card_content-wrap {
@@ -41,6 +62,12 @@
           color: $color-text-light;
           margin-bottom: 38px;
           grid-column: 1 / 3;
+
+          @media screen and (max-width: $bp-tablet) {
+            font-size: 20px;
+            margin-bottom: 38px;
+            grid-column: 1 / 3;
+          }
         }
 
         .card_content_icons {
@@ -51,6 +78,10 @@
           font-size: 32px;
           line-height: 87%;
           color: $color-text-light;
+
+          @media screen and (max-width: $bp-tablet) {
+            font-size: 25px;
+          }
         }
       }
     }
@@ -70,9 +101,52 @@
       opacity: 1;
       background-color: $color-brand;
       color: $color-brand-dark;
+
+      @media screen and (max-width: $bp-mobile) {
+        display: none;
+      }
     }
     path {
       stroke: $color-brand-dark;
+    }
+  }
+
+  .card-cruises,
+  .card-villas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: $bp-mobile) {
+      // width: 358px;
+      height: 200px;
+      max-width: 385px;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .card_content-cruises,
+    .card_content-villas {
+      position: absolute;
+      top: 50%;
+
+      h3 {
+        font-size: 32px;
+        line-height: 87%;
+        color: $color-text-light;
+        @media screen and (max-width: $bp-mobile) {
+          font-size: 12px;
+        }
+      }
+
+      button {
+        position: absolute;
+        bottom: 0;
+      }
     }
   }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0">
+    <symbol id="arrow" width="62" height="25" viewBox="0 0 62 25" fill="none">
+<path d="M1.062 17.414a2 2 0 0 1 0-2.828L13.79 1.858a2 2 0 1 1 2.828 2.828L5.304 16l11.314 11.314a2 2 0 1 1-2.828 2.828L1.062 17.414zM36 18H2.476v-4H36v4z"/>    </symbol>
+
+    <symbol id="Line 11" width="62" height="25" viewBox="0 0 62 25" fill="none">
+        <path d="M2 2L32.5 22L60 2" stroke-width="4"/>
+    </symbol>
+
+</svg>

@@ -1,3 +1,69 @@
-.text-brand {
-  color: var(--color-brand-normal);
+h1 {
+  color: $color-text-light;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  span {
+    @extend %secondary-font;
+    font-size: 64px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+    }
+  }
+
+  span:first-child {
+    align-self: flex-start;
+  }
+  span:last-child {
+    align-self: flex-end;
+  }
+}
+
+.main-header-title {
+  @extend %primary-font;
+  font-size: 200px;
+  -webkit-text-stroke: 3px #fff;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin: 0 auto;
+  align-self: center;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 125px;
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 48px;
+
+    -webkit-text-stroke: 1px #fff;
+  }
+}
+
+.second-header-title {
+  @extend %primary-font;
+  font-size: 128px;
+  -webkit-text-stroke: 3px #fff;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin: 0 auto;
+  align-self: center;
+  line-height: 78%;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 125px;
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 48px;
+
+    -webkit-text-stroke: 1px #fff;
+  }
 }

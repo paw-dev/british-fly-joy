@@ -1,25 +1,9 @@
 .cruises-bg {
   background-image: url(../../images/cruises-bg.jpeg);
-}
 
-.card-cruises {
-  position: relative;
-  display: flex;
-  justify-content: center;
-
-  .card_content-cruises {
-    position: absolute;
-    top: 50%;
-
-    h3 {
-      font-size: 32px;
-      line-height: 87%;
-      color: $color-text-light;
-    }
-
-    button {
-      position: absolute;
-      bottom: 0;
+  @media screen and (max-width: $bp-mobile) {
+    .offers-bg {
+      padding: 42px 0;
     }
   }
 }

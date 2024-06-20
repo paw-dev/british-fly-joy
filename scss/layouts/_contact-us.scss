@@ -1,0 +1,34 @@
+.second {
+  .header-image {
+    .header-title {
+      padding: 63px 0 121px;
+    }
+  }
+}
+
+.contact-us > .container {
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    @extend %secondary-font;
+    font-size: 38px;
+    line-height: 84%;
+    color: $color-dark-green;
+    margin-bottom: 60px;
+  }
+
+  .about-us_contact {
+    color: $color-dark-green;
+  }
+
+  .social-media a {
+    background-color: $color-brand-dark;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
