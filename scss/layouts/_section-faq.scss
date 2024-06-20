@@ -79,12 +79,6 @@
       }
     }
 
-    .accordion-active .accordion_button:after {
-      transform: rotate(180deg);
-      @media screen and (max-width: $bp-mobile) {
-        top: 0;
-      }
-    }
     .panel {
       margin-top: 60px;
       display: none;
@@ -104,6 +98,13 @@
           line-height: 133%;
         }
       }
+    }
+  }
+
+  .accordion-active .accordion_button:after {
+    transform: rotate(180deg);
+    @media screen and (max-width: $bp-mobile) {
+      top: 0;
     }
   }
 }
