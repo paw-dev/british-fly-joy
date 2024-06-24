@@ -14,6 +14,26 @@
   }
 }
 
+.sections {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200px;
+  padding-top: 48px;
+
+  @media screen and (max-width: $bp-mobile) {
+    padding-bottom: 48px;
+    .trust {
+      order: 2;
+    }
+    .reviews {
+      order: 3;
+    }
+    .partners {
+      order: 4;
+    }
+  }
+}
+
 section {
   padding: 100px 0;
 

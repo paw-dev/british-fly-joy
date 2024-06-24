@@ -1,9 +1,4 @@
 .partners {
-  padding-bottom: 200px;
-  @media screen and (max-width: $bp-mobile) {
-    padding-bottom: 48px;
-  }
-
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);

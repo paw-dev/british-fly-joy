@@ -9,6 +9,8 @@
 .contact-us > .container {
   display: flex;
   justify-content: space-between;
+  gap: 58px;
+  flex-wrap: wrap;
 
   h2 {
     @extend %secondary-font;
@@ -16,10 +18,13 @@
     line-height: 84%;
     color: $color-dark-green;
     margin-bottom: 60px;
+    text-align: start;
   }
-
-  .about-us_contact {
-    color: $color-dark-green;
+  .about-us_contacts {
+    margin-left: 0;
+    .about-us_contact {
+      color: $color-dark-green;
+    }
   }
 
   .social-media a {
@@ -30,5 +35,54 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .form_section {
+    width: 792px;
+
+    h2 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      label {
+        font-size: 24px;
+        line-height: 117%;
+        color: $color-dark-green;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      input,
+      textarea {
+        border: 1px solid #b8b8b8;
+        background: transparent;
+        padding: 15px 42px 15px 36px;
+        color: $color-dark-green;
+        @extend %secondary-font;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      .submit {
+        background: $color-brand;
+        border: none;
+        padding: 26px 103px;
+        font-size: 24px;
+        line-height: 117%;
+        color: $color-brand-dark;
+        align-self: flex-start;
+        margin-top: 8px;
+        cursor: pointer;
+      }
+    }
   }
 }
