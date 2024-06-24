@@ -454,16 +454,21 @@
             </div>
             <div class="holidays_buttons_mob">
                 <select>
-                    <option value="0">Beach holidays</option>
-                    <option value="1">Ski holidays</option>
-                    <option value="2">Train holidays</option>
-                    <option value="3">Long-term
-                        stay holidays</option>
-                    <option value="4">Sports event
+                    <option data-filter="beach-holidays" onclick="filterSelection('beach-holidays')">Beach holidays
+                    </option>
+                    <option data-filter="ski-holidays" onclick="filterSelection('ski-holidays')">Ski holidays</option>
+                    <option data-filter="train-holidays" onclick="filterSelection('train-holidays')">Train holidays
+                    </option>
+                    <option data-filter="long-term-stay-holidays" onclick="filterSelection('long-term-stay-holidays')">
+                        Long-term stay holidays</option>
+                    <option data-filter="sports-holidays" onclick="filterSelection('sports-holidays')">Sports event
                         holidays</option>
-                    <option value="5">Concert holidays</option>
-                    <option value="6">City holidays</option>
-                    <option value="7">Sightseeing holidays</option>
+                    <option data-filter="concert-holidays" onclick="filterSelection('concert-holidays')">Concert
+                        holidays</option>
+                    <option data-filter="city-holidays" onclick="filterSelection('city-holidays')">City holidays
+                    </option>
+                    <option data-filter="sightseeing-holidays" onclick="filterSelection('sightseeing-holidays')">
+                        Sightseeing holidays</option>
                 </select>
             </div>
             <div class="cards cards_holidays">
