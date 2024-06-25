@@ -1,0 +1,23 @@
+.blog > .container .blog-section_cards {
+  gap: 124px;
+  .blog_card-section {
+    width: 792px;
+    height: 600px;
+
+    .blog_card_body {
+      width: 490px;
+      height: 376px;
+      padding: 36px 24px 24px;
+
+      p {
+        height: 200px;
+      }
+
+      .blog_card_button {
+        position: relative;
+        width: 280px;
+        align-self: flex-end;
+      }
+    }
+  }
+}

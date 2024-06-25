@@ -1,0 +1,105 @@
+.blog {
+  padding: 160px 0 143px;
+}
+.blog > .container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+
+  .blog_menu {
+    border: 3px solid $color-brand;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 384px;
+
+    a {
+      color: $color-brand-dark;
+      font-size: 32px;
+      line-height: 150%;
+      padding: 6px;
+      text-align: center;
+    }
+
+    .blog_menu_active {
+      background-color: $color-brand;
+    }
+  }
+
+  .blog_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+
+    .blog_card {
+      background: url("/images/blog_card.jpg");
+      width: 384px;
+      height: 482px;
+      position: relative;
+      margin-bottom: 176px;
+
+      .blog_card_body {
+        background-color: $color-brand-dark;
+        position: absolute;
+        width: 282px;
+        height: 286px;
+        @extend %secondary-font;
+        padding: 19px 12px;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        gap: 22px;
+        bottom: -163px;
+
+        h2 {
+          font-size: 24px;
+          line-height: 117%;
+          color: $color-text-light;
+          @extend %secondary-font;
+          height: 28px;
+          overflow: hidden;
+        }
+        p {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 140%;
+          text-align: center;
+          height: 142px;
+          overflow: hidden;
+        }
+
+        .blog_card_button {
+          background-color: $color-brand;
+          color: $color-brand-dark;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      .blog_card_body::before,
+      .blog_card_body::after {
+        content: "";
+        position: absolute;
+        border: 2px solid $color-brand;
+        width: 95px;
+        height: 95px;
+      }
+
+      .blog_card_body::before {
+        content: "";
+
+        top: -12px;
+        right: -12px;
+        border-width: 2px 2px 0 0;
+      }
+
+      .blog_card_body::after {
+        bottom: -12px;
+        left: -12px;
+        border-width: 0 0 2px 2px;
+      }
+    }
+  }
+}
