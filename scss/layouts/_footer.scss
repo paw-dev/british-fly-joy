@@ -43,6 +43,7 @@
     display: flex;
     gap: 120px;
     align-items: center;
+    align-items: flex-start;
     @media screen and (max-width: $bp-tablet) {
       gap: 55px;
       // justify-content: center;
@@ -102,6 +103,7 @@
 .footer-top > .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media screen and (max-width: $bp-mobile) {
     flex-direction: column;
@@ -232,6 +234,10 @@
     flex-direction: column;
     @media screen and (max-width: $bp-mobile) {
     }
+  }
+
+  a {
+    color: $color-text-light;
   }
 
   span {
