@@ -1,4 +1,18 @@
 .trust {
+  .trust_background {
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        transparent 45%,
+        transparent 55%,
+        #ffffff 100%
+      ),
+      linear-gradient(305deg, #ffe401 0%, #007b84 100%);
+    padding-top: 1px;
+    // box-shadow: inset 0px 200px 75px -120px rgba(255, 255, 255, 1),
+    //   inset 0px -200px 72px -60px rgba(255, 255, 255, 1);
+  }
+
   .trust-items {
     display: flex;
     flex-wrap: wrap;
@@ -6,11 +20,11 @@
     position: relative;
     margin: 100px 0;
     padding: 119px 93px 81px;
-    column-gap: 35px;
+    column-gap: 13px;
     // background-color: ;
 
     @media screen and (max-width: $bp-mobile) {
-      margin: 24px 21px;
+      margin: 24px 10px;
       padding: 29px 24px 35px;
     }
 
@@ -26,6 +40,7 @@
       }
 
       img {
+        z-index: 1;
         @media screen and (max-width: $bp-mobile) {
           width: 40px;
           height: 40px;
@@ -45,42 +60,61 @@
 
     .trust-item::before {
       position: absolute;
-      left: -66px;
-      top: -25%;
-      z-index: -1;
+      left: -130px;
+      top: -12%;
+      z-index: 0;
+      @extend %primary-font;
+      font-size: 450px;
+      line-height: 6%;
+      -webkit-text-stroke: 3px #fff;
+      color: rgba(255, 255, 255, 0.6);
       @media screen and (max-width: $bp-mobile) {
+        -webkit-text-stroke: 2px #fff;
         left: -12px;
         top: 5%;
+        font-size: 90px;
       }
     }
 
     .trust-item:nth-child(1):before {
-      content: url(../../images/logos/1.svg);
-      left: -37px;
+      content: "1";
+      left: -102px;
+      @extend %primary-font;
+      font-size: 450px;
+      line-height: 6%;
+
+      color: rgba(255, 255, 255, 0.6);
+
       @media screen and (max-width: $bp-mobile) {
-        content: url(../../images/logos/1-mob.svg);
         left: -12px;
+        font-size: 90px;
       }
     }
 
     .trust-item:nth-child(2):before {
-      content: url(../../images/logos/2.svg);
+      content: "2";
       @media screen and (max-width: $bp-mobile) {
-        content: url(../../images/logos/2-mob.svg);
+        left: -27px;
       }
     }
 
     .trust-item:nth-child(3):before {
-      content: url(../../images/logos/3.svg);
+      content: "3";
+      font-size: 380px;
+      left: -120px;
       @media screen and (max-width: $bp-mobile) {
-        content: url(../../images/logos/3-mob.svg);
+        font-size: 80px;
+        left: -25px;
       }
     }
 
     .trust-item:last-child::before {
-      content: url(../../images/logos/4.svg);
+      content: "4";
+      font-size: 380px;
+      left: -120px;
       @media screen and (max-width: $bp-mobile) {
-        content: url(../../images/logos/4-mob.svg);
+        font-size: 80px;
+        left: -23px;
       }
     }
   }
