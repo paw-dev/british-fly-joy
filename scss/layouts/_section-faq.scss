@@ -87,7 +87,14 @@
         margin-top: 34px;
       }
 
-      p {
+      ul {
+        list-style: disc;
+        padding-left: 40px;
+        padding-bottom: 20px;
+      }
+
+      p,
+      li {
         font-weight: 400;
         font-size: 20px;
         line-height: 140%;
@@ -97,6 +104,10 @@
           font-size: 12px;
           line-height: 133%;
         }
+      }
+
+      li {
+        text-align: start;
       }
     }
   }
