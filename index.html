@@ -10,8 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="./styles/css/main.min.css" />
+    <link rel="preload" href="/images/header-image2.jpeg" as="image">
 </head>
 
 <body>
@@ -161,285 +162,226 @@
             </div>
             <div class="container">
 
-                <div class="swiper-container swiper-container_cards">
-                    <div class="swiper-button-prev hidden-tab"></div>
+                <div class="swiper-container swiper-container_cards_lm">
+
                     <div class="swiper-wrapper cards cards_last-minute-tour">
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./images/lmt-1.jpeg" alt="lmt">
-                                <span class="card_discount">Save you £277</span>
+                                <div class="save">
+                                    <img src="./images/save1.svg" alt="" class="save-image">
+                                    <span class="save-text"> SAVE £277</span>
+                                </div>
+                                <div class="card_image">
+                                    <div class="card_icons">
+                                        <div class="card_icons_top">
+                                            <button class="card_icon_top">
+                                                <img src="./images/like.svg" alt="">
+                                            </button>
+                                            <button class="card_icon_top">
+                                                <img src="./images/share.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="card_icons_bottom">
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly.svg" alt="">
+                                                <span>11 Jul</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly2.svg" alt="">
+                                                <span>BB</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly3.svg" alt="">
+                                                <span>7</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly4.svg" alt="">
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="card_content-wrap">
                                     <div class="card_content">
+                                        <span class="card_content_country">Portugal, Algarve</span>
                                         <h3>Iceland With Tours <br>
                                             Tours Through Iceland's Beauty</h3>
-                                        <div class="card_content_icons">
-                                            <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 2.26326H2.65298V0H12.405V2.26326H15.0968V18.4509V19.0744V22H10.1422V19.0744H4.91583V22H0V19.0744V18.4509V2.26326Z"
-                                                    fill="#FFE502" />
-                                                <path d="M10.767 2.8869H8.62085V5.0718H10.767V2.8869Z" fill="#017C85" />
-                                                <path d="M6.43739 15.7984H4.29126V17.8666H6.43739V15.7984Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 15.7984H8.62085V17.8666H10.767V15.7984Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 11.4685H4.29126V13.6146H6.43739V11.4685Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 7.21664H4.29126V9.3236H6.43739V7.21664Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 2.8869H4.29126V5.0718H6.43739V2.8869Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 11.4685H8.62085V13.6146H10.767V11.4685Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 7.21664H8.62085V9.3236H10.767V7.21664Z"
-                                                    fill="#017C85" />
-                                            </svg>
-                                            <svg width="40" height="16" viewBox="0 0 40 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M39.2932 2.13391C39.1927 1.7072 39.1421 1.04302 37.0792 0.898955C36.5255 0.898955 36.1233 0.948134 35.9222 0.995327C35.8206 0.852756 34.362 -0.334996 32.0975 0.0922184C29.6829 0.1871 26.6641 1.56462 24.3996 2.37086L20.2237 1.46974L17.1038 2.56062L19.1672 4.17509H19.2173L8.65156 7.92615L6.18543 6.93014L4.92788 6.45573L2.9655 5.6475L0.0966797 6.6455L0.348814 6.97733L2.51175 9.06621L2.76337 9.30366L1.90798 11.013L3.4682 10.4914L3.76982 10.2068L3.97143 10.4442L5.27899 11.6797L7.79513 14.1009H7.84566C7.89619 14.1481 7.99673 14.1481 8.14728 14.1953C9.00319 14.3378 10.965 14.0532 13.4312 13.2465C13.3806 13.2465 13.3296 13.2465 13.2796 13.1973C13.1285 13.1501 12.8774 12.9126 12.6763 12.5808C12.6263 12.4859 12.5758 12.3433 12.5253 12.2008C12.2742 11.6315 12.3247 11.1551 12.4247 10.9658C12.4247 10.9181 12.4753 10.8709 12.5253 10.8709C12.5758 10.8709 12.6258 10.8709 12.7263 10.9186C12.9274 11.0135 13.229 11.3453 13.4312 11.8689C13.4812 12.0115 13.5317 12.1536 13.5817 12.2485V12.2962C13.9334 12.1536 14.1855 12.0587 14.286 12.0115L18.4619 10.5396L15.0403 16L19.1667 14.5281L26.2603 7.78506L33.4056 5.26946L34.311 4.93762C34.3615 4.93762 34.3615 4.93762 34.4115 4.89043C35.569 4.46371 34.512 4.89043 36.8271 3.89244C39.4943 2.89444 39.2932 2.13391 39.2932 2.13391Z"
-                                                    fill="#FFE502" />
-                                            </svg>
-                                            <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M23.4803 6.51841V1.63019C23.4803 0.704253 22.7318 0 21.762 0H3.61162C2.64236 0 1.84962 0.704253 1.84962 1.63019V6.51841C-0.220708 6.51841 -0.220708 10.3521 1.84962 10.3521V15.1104C1.84962 15.286 2.06993 15.5063 2.2907 15.5063H3.25949C3.4798 15.5063 3.7001 15.6824 3.7001 15.8584V19.6027C3.7001 19.7788 3.87663 20 4.14118 20H6.38803C6.60788 20 6.78394 19.7788 6.78394 19.6027V15.8584C6.78394 15.6824 7.00379 15.5063 7.22502 15.5063H18.2385C18.4588 15.5063 18.6805 15.6824 18.6805 15.8584V19.6027C18.6805 19.7788 18.8566 20 19.0764 20H21.3224C21.5865 20 21.7625 19.7788 21.7625 19.6027V15.8584C21.7625 15.6824 21.9842 15.5063 22.204 15.5063H23.0406C23.3042 15.5063 23.4803 15.286 23.4803 15.1104V10.3521C25.64 10.3526 25.64 6.51841 23.4803 6.51841Z"
-                                                    fill="#FFE502" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M21.3223 10.8363C21.5422 10.8363 21.7182 10.6603 21.7182 10.3962V5.46185C21.7182 5.19776 21.5422 5.02031 21.3223 5.02031H12.864V10.8363C15.6395 10.8363 18.5459 10.8363 21.3223 10.8363Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12.7762 10.8363V5.02031H4.05333C3.83303 5.02031 3.65649 5.19822 3.65649 5.46185V10.3962C3.65649 10.6603 3.83303 10.8363 4.05333 10.8363H12.7762Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M21.8065 13.3925C21.8065 12.4666 21.0142 11.7181 20.0445 11.7181C19.0319 11.7181 18.2825 12.4666 18.2825 13.3925C18.2825 14.2729 19.0319 15.0223 20.0445 15.0223C21.0146 15.0223 21.8065 14.2729 21.8065 13.3925Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M6.78397 13.3925C6.78397 12.4666 5.99078 11.7181 5.02198 11.7181C4.00894 11.7181 3.25952 12.4666 3.25952 13.3925C3.25952 14.2729 4.00894 15.0223 5.02198 15.0223C5.99078 15.0223 6.78397 14.2729 6.78397 13.3925Z"
-                                                    fill="#017C85" />
-                                            </svg>
+                                        <div class="card_content_bottom">
+                                            <span class="card_price">From
+                                                <span class="card_price_number">£495</span>
+                                            </span>
+                                            <button class=" card_button">View deal</button>
                                         </div>
-                                        <span class="card_price">From £495 </span>
                                     </div>
-                                    <button class=" card_button">View deal
-                                        <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.5 1L7.5 8.58333L0.5 15" stroke="#004145" />
-                                            <path d="M11.5 1L18.5 8.58333L11.5 15" stroke="#004145" />
-                                            <path d="M22.5 1L29.5 8.58333L22.5 15" stroke="#004145" />
-                                        </svg>
-                                    </button>
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./images/lmt-1.jpeg" alt="lmt">
-                                <span class="card_discount">Save you £277</span>
+                                <div class="save">
+                                    <img src="./images/save1.svg" alt="" class="save-image">
+                                    <span class="save-text"> SAVE £277</span>
+                                </div>
+                                <div class="card_image">
+                                    <div class="card_icons">
+                                        <div class="card_icons_top">
+                                            <button class="card_icon_top">
+                                                <img src="./images/like.svg" alt="">
+                                            </button>
+                                            <button class="card_icon_top">
+                                                <img src="./images/share.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="card_icons_bottom">
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly.svg" alt="">
+                                                <span>11 Jul</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly2.svg" alt="">
+                                                <span>BB</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly3.svg" alt="">
+                                                <span>7</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly4.svg" alt="">
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="card_content-wrap">
                                     <div class="card_content">
+                                        <span class="card_content_country">Portugal, Algarve</span>
                                         <h3>Iceland With Tours <br>
                                             Tours Through Iceland's Beauty</h3>
-                                        <div class="card_content_icons">
-                                            <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 2.26326H2.65298V0H12.405V2.26326H15.0968V18.4509V19.0744V22H10.1422V19.0744H4.91583V22H0V19.0744V18.4509V2.26326Z"
-                                                    fill="#FFE502" />
-                                                <path d="M10.767 2.8869H8.62085V5.0718H10.767V2.8869Z" fill="#017C85" />
-                                                <path d="M6.43739 15.7984H4.29126V17.8666H6.43739V15.7984Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 15.7984H8.62085V17.8666H10.767V15.7984Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 11.4685H4.29126V13.6146H6.43739V11.4685Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 7.21664H4.29126V9.3236H6.43739V7.21664Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 2.8869H4.29126V5.0718H6.43739V2.8869Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 11.4685H8.62085V13.6146H10.767V11.4685Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 7.21664H8.62085V9.3236H10.767V7.21664Z"
-                                                    fill="#017C85" />
-                                            </svg>
-                                            <svg width="40" height="16" viewBox="0 0 40 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M39.2932 2.13391C39.1927 1.7072 39.1421 1.04302 37.0792 0.898955C36.5255 0.898955 36.1233 0.948134 35.9222 0.995327C35.8206 0.852756 34.362 -0.334996 32.0975 0.0922184C29.6829 0.1871 26.6641 1.56462 24.3996 2.37086L20.2237 1.46974L17.1038 2.56062L19.1672 4.17509H19.2173L8.65156 7.92615L6.18543 6.93014L4.92788 6.45573L2.9655 5.6475L0.0966797 6.6455L0.348814 6.97733L2.51175 9.06621L2.76337 9.30366L1.90798 11.013L3.4682 10.4914L3.76982 10.2068L3.97143 10.4442L5.27899 11.6797L7.79513 14.1009H7.84566C7.89619 14.1481 7.99673 14.1481 8.14728 14.1953C9.00319 14.3378 10.965 14.0532 13.4312 13.2465C13.3806 13.2465 13.3296 13.2465 13.2796 13.1973C13.1285 13.1501 12.8774 12.9126 12.6763 12.5808C12.6263 12.4859 12.5758 12.3433 12.5253 12.2008C12.2742 11.6315 12.3247 11.1551 12.4247 10.9658C12.4247 10.9181 12.4753 10.8709 12.5253 10.8709C12.5758 10.8709 12.6258 10.8709 12.7263 10.9186C12.9274 11.0135 13.229 11.3453 13.4312 11.8689C13.4812 12.0115 13.5317 12.1536 13.5817 12.2485V12.2962C13.9334 12.1536 14.1855 12.0587 14.286 12.0115L18.4619 10.5396L15.0403 16L19.1667 14.5281L26.2603 7.78506L33.4056 5.26946L34.311 4.93762C34.3615 4.93762 34.3615 4.93762 34.4115 4.89043C35.569 4.46371 34.512 4.89043 36.8271 3.89244C39.4943 2.89444 39.2932 2.13391 39.2932 2.13391Z"
-                                                    fill="#FFE502" />
-                                            </svg>
-                                            <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M23.4803 6.51841V1.63019C23.4803 0.704253 22.7318 0 21.762 0H3.61162C2.64236 0 1.84962 0.704253 1.84962 1.63019V6.51841C-0.220708 6.51841 -0.220708 10.3521 1.84962 10.3521V15.1104C1.84962 15.286 2.06993 15.5063 2.2907 15.5063H3.25949C3.4798 15.5063 3.7001 15.6824 3.7001 15.8584V19.6027C3.7001 19.7788 3.87663 20 4.14118 20H6.38803C6.60788 20 6.78394 19.7788 6.78394 19.6027V15.8584C6.78394 15.6824 7.00379 15.5063 7.22502 15.5063H18.2385C18.4588 15.5063 18.6805 15.6824 18.6805 15.8584V19.6027C18.6805 19.7788 18.8566 20 19.0764 20H21.3224C21.5865 20 21.7625 19.7788 21.7625 19.6027V15.8584C21.7625 15.6824 21.9842 15.5063 22.204 15.5063H23.0406C23.3042 15.5063 23.4803 15.286 23.4803 15.1104V10.3521C25.64 10.3526 25.64 6.51841 23.4803 6.51841Z"
-                                                    fill="#FFE502" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M21.3223 10.8363C21.5422 10.8363 21.7182 10.6603 21.7182 10.3962V5.46185C21.7182 5.19776 21.5422 5.02031 21.3223 5.02031H12.864V10.8363C15.6395 10.8363 18.5459 10.8363 21.3223 10.8363Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12.7762 10.8363V5.02031H4.05333C3.83303 5.02031 3.65649 5.19822 3.65649 5.46185V10.3962C3.65649 10.6603 3.83303 10.8363 4.05333 10.8363H12.7762Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M21.8065 13.3925C21.8065 12.4666 21.0142 11.7181 20.0445 11.7181C19.0319 11.7181 18.2825 12.4666 18.2825 13.3925C18.2825 14.2729 19.0319 15.0223 20.0445 15.0223C21.0146 15.0223 21.8065 14.2729 21.8065 13.3925Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M6.78397 13.3925C6.78397 12.4666 5.99078 11.7181 5.02198 11.7181C4.00894 11.7181 3.25952 12.4666 3.25952 13.3925C3.25952 14.2729 4.00894 15.0223 5.02198 15.0223C5.99078 15.0223 6.78397 14.2729 6.78397 13.3925Z"
-                                                    fill="#017C85" />
-                                            </svg>
+                                        <div class="card_content_bottom">
+                                            <span class="card_price">From
+                                                <span class="card_price_number">£495</span>
+                                            </span>
+                                            <button class=" card_button">View deal</button>
                                         </div>
-                                        <span class="card_price">From £495 </span>
+
                                     </div>
-                                    <button class=" card_button">Read more
-                                        <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.5 1L7.5 8.58333L0.5 15" stroke="#004145" />
-                                            <path d="M11.5 1L18.5 8.58333L11.5 15" stroke="#004145" />
-                                            <path d="M22.5 1L29.5 8.58333L22.5 15" stroke="#004145" />
-                                        </svg>
-                                    </button>
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./images/lmt-1.jpeg" alt="lmt">
-                                <span class="card_discount">Save you £277</span>
+                                <div class="save">
+                                    <img src="./images/save1.svg" alt="" class="save-image">
+                                    <span class="save-text"> SAVE £277</span>
+                                </div>
+                                <div class="card_image">
+                                    <div class="card_icons">
+                                        <div class="card_icons_top">
+                                            <button class="card_icon_top">
+                                                <img src="./images/like.svg" alt="">
+                                            </button>
+                                            <button class="card_icon_top">
+                                                <img src="./images/share.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="card_icons_bottom">
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly.svg" alt="">
+                                                <span>11 Jul</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly2.svg" alt="">
+                                                <span>BB</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly3.svg" alt="">
+                                                <span>7</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly4.svg" alt="">
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="card_content-wrap">
                                     <div class="card_content">
+                                        <span class="card_content_country">Portugal, Algarve</span>
                                         <h3>Iceland With Tours <br>
                                             Tours Through Iceland's Beauty</h3>
-                                        <div class="card_content_icons">
-                                            <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 2.26326H2.65298V0H12.405V2.26326H15.0968V18.4509V19.0744V22H10.1422V19.0744H4.91583V22H0V19.0744V18.4509V2.26326Z"
-                                                    fill="#FFE502" />
-                                                <path d="M10.767 2.8869H8.62085V5.0718H10.767V2.8869Z" fill="#017C85" />
-                                                <path d="M6.43739 15.7984H4.29126V17.8666H6.43739V15.7984Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 15.7984H8.62085V17.8666H10.767V15.7984Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 11.4685H4.29126V13.6146H6.43739V11.4685Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 7.21664H4.29126V9.3236H6.43739V7.21664Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 2.8869H4.29126V5.0718H6.43739V2.8869Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 11.4685H8.62085V13.6146H10.767V11.4685Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 7.21664H8.62085V9.3236H10.767V7.21664Z"
-                                                    fill="#017C85" />
-                                            </svg>
-                                            <svg width="40" height="16" viewBox="0 0 40 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M39.2932 2.13391C39.1927 1.7072 39.1421 1.04302 37.0792 0.898955C36.5255 0.898955 36.1233 0.948134 35.9222 0.995327C35.8206 0.852756 34.362 -0.334996 32.0975 0.0922184C29.6829 0.1871 26.6641 1.56462 24.3996 2.37086L20.2237 1.46974L17.1038 2.56062L19.1672 4.17509H19.2173L8.65156 7.92615L6.18543 6.93014L4.92788 6.45573L2.9655 5.6475L0.0966797 6.6455L0.348814 6.97733L2.51175 9.06621L2.76337 9.30366L1.90798 11.013L3.4682 10.4914L3.76982 10.2068L3.97143 10.4442L5.27899 11.6797L7.79513 14.1009H7.84566C7.89619 14.1481 7.99673 14.1481 8.14728 14.1953C9.00319 14.3378 10.965 14.0532 13.4312 13.2465C13.3806 13.2465 13.3296 13.2465 13.2796 13.1973C13.1285 13.1501 12.8774 12.9126 12.6763 12.5808C12.6263 12.4859 12.5758 12.3433 12.5253 12.2008C12.2742 11.6315 12.3247 11.1551 12.4247 10.9658C12.4247 10.9181 12.4753 10.8709 12.5253 10.8709C12.5758 10.8709 12.6258 10.8709 12.7263 10.9186C12.9274 11.0135 13.229 11.3453 13.4312 11.8689C13.4812 12.0115 13.5317 12.1536 13.5817 12.2485V12.2962C13.9334 12.1536 14.1855 12.0587 14.286 12.0115L18.4619 10.5396L15.0403 16L19.1667 14.5281L26.2603 7.78506L33.4056 5.26946L34.311 4.93762C34.3615 4.93762 34.3615 4.93762 34.4115 4.89043C35.569 4.46371 34.512 4.89043 36.8271 3.89244C39.4943 2.89444 39.2932 2.13391 39.2932 2.13391Z"
-                                                    fill="#FFE502" />
-                                            </svg>
-                                            <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M23.4803 6.51841V1.63019C23.4803 0.704253 22.7318 0 21.762 0H3.61162C2.64236 0 1.84962 0.704253 1.84962 1.63019V6.51841C-0.220708 6.51841 -0.220708 10.3521 1.84962 10.3521V15.1104C1.84962 15.286 2.06993 15.5063 2.2907 15.5063H3.25949C3.4798 15.5063 3.7001 15.6824 3.7001 15.8584V19.6027C3.7001 19.7788 3.87663 20 4.14118 20H6.38803C6.60788 20 6.78394 19.7788 6.78394 19.6027V15.8584C6.78394 15.6824 7.00379 15.5063 7.22502 15.5063H18.2385C18.4588 15.5063 18.6805 15.6824 18.6805 15.8584V19.6027C18.6805 19.7788 18.8566 20 19.0764 20H21.3224C21.5865 20 21.7625 19.7788 21.7625 19.6027V15.8584C21.7625 15.6824 21.9842 15.5063 22.204 15.5063H23.0406C23.3042 15.5063 23.4803 15.286 23.4803 15.1104V10.3521C25.64 10.3526 25.64 6.51841 23.4803 6.51841Z"
-                                                    fill="#FFE502" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M21.3223 10.8363C21.5422 10.8363 21.7182 10.6603 21.7182 10.3962V5.46185C21.7182 5.19776 21.5422 5.02031 21.3223 5.02031H12.864V10.8363C15.6395 10.8363 18.5459 10.8363 21.3223 10.8363Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12.7762 10.8363V5.02031H4.05333C3.83303 5.02031 3.65649 5.19822 3.65649 5.46185V10.3962C3.65649 10.6603 3.83303 10.8363 4.05333 10.8363H12.7762Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M21.8065 13.3925C21.8065 12.4666 21.0142 11.7181 20.0445 11.7181C19.0319 11.7181 18.2825 12.4666 18.2825 13.3925C18.2825 14.2729 19.0319 15.0223 20.0445 15.0223C21.0146 15.0223 21.8065 14.2729 21.8065 13.3925Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M6.78397 13.3925C6.78397 12.4666 5.99078 11.7181 5.02198 11.7181C4.00894 11.7181 3.25952 12.4666 3.25952 13.3925C3.25952 14.2729 4.00894 15.0223 5.02198 15.0223C5.99078 15.0223 6.78397 14.2729 6.78397 13.3925Z"
-                                                    fill="#017C85" />
-                                            </svg>
+                                        <div class="card_content_bottom">
+                                            <span class="card_price">From
+                                                <span class="card_price_number">£495</span>
+                                            </span>
+                                            <button class=" card_button">View deal</button>
                                         </div>
-                                        <span class="card_price">From £495 </span>
+
                                     </div>
-                                    <button class=" card_button">Read more
-                                        <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.5 1L7.5 8.58333L0.5 15" stroke="#004145" />
-                                            <path d="M11.5 1L18.5 8.58333L11.5 15" stroke="#004145" />
-                                            <path d="M22.5 1L29.5 8.58333L22.5 15" stroke="#004145" />
-                                        </svg>
-                                    </button>
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./images/lmt-1.jpeg" alt="lmt">
-                                <span class="card_discount">Save you £277</span>
+                                <div class="save">
+                                    <img src="./images/save1.svg" alt="" class="save-image">
+                                    <span class="save-text"> SAVE £277</span>
+                                </div>
+                                <div class="card_image">
+                                    <div class="card_icons">
+                                        <div class="card_icons_top">
+                                            <button class="card_icon_top">
+                                                <img src="./images/like.svg" alt="">
+                                            </button>
+                                            <button class="card_icon_top">
+                                                <img src="./images/share.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="card_icons_bottom">
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly.svg" alt="">
+                                                <span>11 Jul</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly2.svg" alt="">
+                                                <span>BB</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly3.svg" alt="">
+                                                <span>7</span>
+                                            </div>
+                                            <div class="card_icon_bottom">
+                                                <img src="./images/fly4.svg" alt="">
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="card_content-wrap">
                                     <div class="card_content">
+                                        <span class="card_content_country">Portugal, Algarve</span>
                                         <h3>Iceland With Tours <br>
                                             Tours Through Iceland's Beauty</h3>
-                                        <div class="card_content_icons">
-                                            <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 2.26326H2.65298V0H12.405V2.26326H15.0968V18.4509V19.0744V22H10.1422V19.0744H4.91583V22H0V19.0744V18.4509V2.26326Z"
-                                                    fill="#FFE502" />
-                                                <path d="M10.767 2.8869H8.62085V5.0718H10.767V2.8869Z" fill="#017C85" />
-                                                <path d="M6.43739 15.7984H4.29126V17.8666H6.43739V15.7984Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 15.7984H8.62085V17.8666H10.767V15.7984Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 11.4685H4.29126V13.6146H6.43739V11.4685Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 7.21664H4.29126V9.3236H6.43739V7.21664Z"
-                                                    fill="#017C85" />
-                                                <path d="M6.43739 2.8869H4.29126V5.0718H6.43739V2.8869Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 11.4685H8.62085V13.6146H10.767V11.4685Z"
-                                                    fill="#017C85" />
-                                                <path d="M10.767 7.21664H8.62085V9.3236H10.767V7.21664Z"
-                                                    fill="#017C85" />
-                                            </svg>
-                                            <svg width="40" height="16" viewBox="0 0 40 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M39.2932 2.13391C39.1927 1.7072 39.1421 1.04302 37.0792 0.898955C36.5255 0.898955 36.1233 0.948134 35.9222 0.995327C35.8206 0.852756 34.362 -0.334996 32.0975 0.0922184C29.6829 0.1871 26.6641 1.56462 24.3996 2.37086L20.2237 1.46974L17.1038 2.56062L19.1672 4.17509H19.2173L8.65156 7.92615L6.18543 6.93014L4.92788 6.45573L2.9655 5.6475L0.0966797 6.6455L0.348814 6.97733L2.51175 9.06621L2.76337 9.30366L1.90798 11.013L3.4682 10.4914L3.76982 10.2068L3.97143 10.4442L5.27899 11.6797L7.79513 14.1009H7.84566C7.89619 14.1481 7.99673 14.1481 8.14728 14.1953C9.00319 14.3378 10.965 14.0532 13.4312 13.2465C13.3806 13.2465 13.3296 13.2465 13.2796 13.1973C13.1285 13.1501 12.8774 12.9126 12.6763 12.5808C12.6263 12.4859 12.5758 12.3433 12.5253 12.2008C12.2742 11.6315 12.3247 11.1551 12.4247 10.9658C12.4247 10.9181 12.4753 10.8709 12.5253 10.8709C12.5758 10.8709 12.6258 10.8709 12.7263 10.9186C12.9274 11.0135 13.229 11.3453 13.4312 11.8689C13.4812 12.0115 13.5317 12.1536 13.5817 12.2485V12.2962C13.9334 12.1536 14.1855 12.0587 14.286 12.0115L18.4619 10.5396L15.0403 16L19.1667 14.5281L26.2603 7.78506L33.4056 5.26946L34.311 4.93762C34.3615 4.93762 34.3615 4.93762 34.4115 4.89043C35.569 4.46371 34.512 4.89043 36.8271 3.89244C39.4943 2.89444 39.2932 2.13391 39.2932 2.13391Z"
-                                                    fill="#FFE502" />
-                                            </svg>
-                                            <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M23.4803 6.51841V1.63019C23.4803 0.704253 22.7318 0 21.762 0H3.61162C2.64236 0 1.84962 0.704253 1.84962 1.63019V6.51841C-0.220708 6.51841 -0.220708 10.3521 1.84962 10.3521V15.1104C1.84962 15.286 2.06993 15.5063 2.2907 15.5063H3.25949C3.4798 15.5063 3.7001 15.6824 3.7001 15.8584V19.6027C3.7001 19.7788 3.87663 20 4.14118 20H6.38803C6.60788 20 6.78394 19.7788 6.78394 19.6027V15.8584C6.78394 15.6824 7.00379 15.5063 7.22502 15.5063H18.2385C18.4588 15.5063 18.6805 15.6824 18.6805 15.8584V19.6027C18.6805 19.7788 18.8566 20 19.0764 20H21.3224C21.5865 20 21.7625 19.7788 21.7625 19.6027V15.8584C21.7625 15.6824 21.9842 15.5063 22.204 15.5063H23.0406C23.3042 15.5063 23.4803 15.286 23.4803 15.1104V10.3521C25.64 10.3526 25.64 6.51841 23.4803 6.51841Z"
-                                                    fill="#FFE502" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M21.3223 10.8363C21.5422 10.8363 21.7182 10.6603 21.7182 10.3962V5.46185C21.7182 5.19776 21.5422 5.02031 21.3223 5.02031H12.864V10.8363C15.6395 10.8363 18.5459 10.8363 21.3223 10.8363Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12.7762 10.8363V5.02031H4.05333C3.83303 5.02031 3.65649 5.19822 3.65649 5.46185V10.3962C3.65649 10.6603 3.83303 10.8363 4.05333 10.8363H12.7762Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M21.8065 13.3925C21.8065 12.4666 21.0142 11.7181 20.0445 11.7181C19.0319 11.7181 18.2825 12.4666 18.2825 13.3925C18.2825 14.2729 19.0319 15.0223 20.0445 15.0223C21.0146 15.0223 21.8065 14.2729 21.8065 13.3925Z"
-                                                    fill="#017C85" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M6.78397 13.3925C6.78397 12.4666 5.99078 11.7181 5.02198 11.7181C4.00894 11.7181 3.25952 12.4666 3.25952 13.3925C3.25952 14.2729 4.00894 15.0223 5.02198 15.0223C5.99078 15.0223 6.78397 14.2729 6.78397 13.3925Z"
-                                                    fill="#017C85" />
-                                            </svg>
+                                        <div class="card_content_bottom">
+                                            <span class="card_price">From
+                                                <span class="card_price_number">£495</span>
+                                            </span>
+                                            <button class=" card_button">View deal</button>
                                         </div>
-                                        <span class="card_price">From £495 </span>
+
                                     </div>
-                                    <button class=" card_button">Read more
-                                        <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.5 1L7.5 8.58333L0.5 15" stroke="#004145" />
-                                            <path d="M11.5 1L18.5 8.58333L11.5 15" stroke="#004145" />
-                                            <path d="M22.5 1L29.5 8.58333L22.5 15" stroke="#004145" />
-                                        </svg>
-                                    </button>
                                 </div>
                             </div>
                         </div>
+
 
                     </div>
-
+                    <div class="swiper-button-prev hidden-tab"></div>
+                    <div class="swiper-pagination"></div>
                     <div class="swiper-button-next hidden-tab"></div>
+
                 </div>
 
                 <button class="section_read-more_button">Read more
@@ -497,357 +439,320 @@
                 </div>
                 <div class="cards cards_holidays">
                     <div class="card filter-card beach-holidays">
-                        <img src="./images/lmt-1.jpeg" alt="lmt">
-                        <span class="card_discount">Save you £277</span>
+                        <div class="save">
+                            <img src="./images/save1.svg" alt="" class="save-image">
+                            <span class="save-text"> SAVE £277</span>
+                        </div>
+                        <div class="card_image">
+                            <div class="card_icons">
+                                <div class="card_icons_top">
+                                    <button class="card_icon_top">
+                                        <img src="./images/like.svg" alt="">
+                                    </button>
+                                    <button class="card_icon_top">
+                                        <img src="./images/share.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card_content-wrap">
                             <div class="card_content">
+                                <span class="card_content_country">Portugal, Algarve</span>
                                 <h3>Iceland With Tours <br>
                                     Tours Through Iceland's Beauty</h3>
-                                <div class="card_content_icons">
-                                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 2.26326H2.65298V0H12.405V2.26326H15.0968V18.4509V19.0744V22H10.1422V19.0744H4.91583V22H0V19.0744V18.4509V2.26326Z"
-                                            fill="#FFE502" />
-                                        <path d="M10.767 2.8869H8.62085V5.0718H10.767V2.8869Z" fill="#017C85" />
-                                        <path d="M6.43739 15.7984H4.29126V17.8666H6.43739V15.7984Z" fill="#017C85" />
-                                        <path d="M10.767 15.7984H8.62085V17.8666H10.767V15.7984Z" fill="#017C85" />
-                                        <path d="M6.43739 11.4685H4.29126V13.6146H6.43739V11.4685Z" fill="#017C85" />
-                                        <path d="M6.43739 7.21664H4.29126V9.3236H6.43739V7.21664Z" fill="#017C85" />
-                                        <path d="M6.43739 2.8869H4.29126V5.0718H6.43739V2.8869Z" fill="#017C85" />
-                                        <path d="M10.767 11.4685H8.62085V13.6146H10.767V11.4685Z" fill="#017C85" />
-                                        <path d="M10.767 7.21664H8.62085V9.3236H10.767V7.21664Z" fill="#017C85" />
-                                    </svg>
-                                    <svg width="40" height="16" viewBox="0 0 40 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M39.2932 2.13391C39.1927 1.7072 39.1421 1.04302 37.0792 0.898955C36.5255 0.898955 36.1233 0.948134 35.9222 0.995327C35.8206 0.852756 34.362 -0.334996 32.0975 0.0922184C29.6829 0.1871 26.6641 1.56462 24.3996 2.37086L20.2237 1.46974L17.1038 2.56062L19.1672 4.17509H19.2173L8.65156 7.92615L6.18543 6.93014L4.92788 6.45573L2.9655 5.6475L0.0966797 6.6455L0.348814 6.97733L2.51175 9.06621L2.76337 9.30366L1.90798 11.013L3.4682 10.4914L3.76982 10.2068L3.97143 10.4442L5.27899 11.6797L7.79513 14.1009H7.84566C7.89619 14.1481 7.99673 14.1481 8.14728 14.1953C9.00319 14.3378 10.965 14.0532 13.4312 13.2465C13.3806 13.2465 13.3296 13.2465 13.2796 13.1973C13.1285 13.1501 12.8774 12.9126 12.6763 12.5808C12.6263 12.4859 12.5758 12.3433 12.5253 12.2008C12.2742 11.6315 12.3247 11.1551 12.4247 10.9658C12.4247 10.9181 12.4753 10.8709 12.5253 10.8709C12.5758 10.8709 12.6258 10.8709 12.7263 10.9186C12.9274 11.0135 13.229 11.3453 13.4312 11.8689C13.4812 12.0115 13.5317 12.1536 13.5817 12.2485V12.2962C13.9334 12.1536 14.1855 12.0587 14.286 12.0115L18.4619 10.5396L15.0403 16L19.1667 14.5281L26.2603 7.78506L33.4056 5.26946L34.311 4.93762C34.3615 4.93762 34.3615 4.93762 34.4115 4.89043C35.569 4.46371 34.512 4.89043 36.8271 3.89244C39.4943 2.89444 39.2932 2.13391 39.2932 2.13391Z"
-                                            fill="#FFE502" />
-                                    </svg>
-                                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.4803 6.51841V1.63019C23.4803 0.704253 22.7318 0 21.762 0H3.61162C2.64236 0 1.84962 0.704253 1.84962 1.63019V6.51841C-0.220708 6.51841 -0.220708 10.3521 1.84962 10.3521V15.1104C1.84962 15.286 2.06993 15.5063 2.2907 15.5063H3.25949C3.4798 15.5063 3.7001 15.6824 3.7001 15.8584V19.6027C3.7001 19.7788 3.87663 20 4.14118 20H6.38803C6.60788 20 6.78394 19.7788 6.78394 19.6027V15.8584C6.78394 15.6824 7.00379 15.5063 7.22502 15.5063H18.2385C18.4588 15.5063 18.6805 15.6824 18.6805 15.8584V19.6027C18.6805 19.7788 18.8566 20 19.0764 20H21.3224C21.5865 20 21.7625 19.7788 21.7625 19.6027V15.8584C21.7625 15.6824 21.9842 15.5063 22.204 15.5063H23.0406C23.3042 15.5063 23.4803 15.286 23.4803 15.1104V10.3521C25.64 10.3526 25.64 6.51841 23.4803 6.51841Z"
-                                            fill="#FFE502" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.3223 10.8363C21.5422 10.8363 21.7182 10.6603 21.7182 10.3962V5.46185C21.7182 5.19776 21.5422 5.02031 21.3223 5.02031H12.864V10.8363C15.6395 10.8363 18.5459 10.8363 21.3223 10.8363Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.7762 10.8363V5.02031H4.05333C3.83303 5.02031 3.65649 5.19822 3.65649 5.46185V10.3962C3.65649 10.6603 3.83303 10.8363 4.05333 10.8363H12.7762Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.8065 13.3925C21.8065 12.4666 21.0142 11.7181 20.0445 11.7181C19.0319 11.7181 18.2825 12.4666 18.2825 13.3925C18.2825 14.2729 19.0319 15.0223 20.0445 15.0223C21.0146 15.0223 21.8065 14.2729 21.8065 13.3925Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M6.78397 13.3925C6.78397 12.4666 5.99078 11.7181 5.02198 11.7181C4.00894 11.7181 3.25952 12.4666 3.25952 13.3925C3.25952 14.2729 4.00894 15.0223 5.02198 15.0223C5.99078 15.0223 6.78397 14.2729 6.78397 13.3925Z"
-                                            fill="#017C85" />
-                                    </svg>
+                                <div class="card_icons card_icons_holiday">
+
+                                    <div class="card_icons_bottom">
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly.svg" alt="">
+                                            <span>11 Jul</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly2.svg" alt="">
+                                            <span>BB</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly3.svg" alt="">
+                                            <span>7</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly4.svg" alt="">
+                                            <span>1</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="card_price">From £495 </span>
+                                <div class="card_content_bottom">
+                                    <span class="card_price">From
+                                        <span class="card_price_number">£495</span>
+                                    </span>
+                                    <button class=" card_button">View deal</button>
+                                </div>
                             </div>
-                            <button class=" card_button">View deal
-                                <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.5 1L7.5 8.58333L0.5 15" stroke="#004145" />
-                                    <path d="M11.5 1L18.5 8.58333L11.5 15" stroke="#004145" />
-                                    <path d="M22.5 1L29.5 8.58333L22.5 15" stroke="#004145" />
-                                </svg>
-                            </button>
                         </div>
                     </div>
+
                     <div class="card filter-card beach-holidays">
-                        <img src="./images/lmt-1.jpeg" alt="lmt">
-                        <span class="card_discount">Save you £277</span>
+                        <div class="save">
+                            <img src="./images/save1.svg" alt="" class="save-image">
+                            <span class="save-text"> SAVE £277</span>
+                        </div>
+                        <div class="card_image">
+                            <div class="card_icons">
+                                <div class="card_icons_top">
+                                    <button class="card_icon_top">
+                                        <img src="./images/like.svg" alt="">
+                                    </button>
+                                    <button class="card_icon_top">
+                                        <img src="./images/share.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card_content-wrap">
                             <div class="card_content">
+                                <span class="card_content_country">Portugal, Algarve</span>
                                 <h3>Iceland With Tours <br>
                                     Tours Through Iceland's Beauty</h3>
-                                <div class="card_content_icons">
-                                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 2.26326H2.65298V0H12.405V2.26326H15.0968V18.4509V19.0744V22H10.1422V19.0744H4.91583V22H0V19.0744V18.4509V2.26326Z"
-                                            fill="#FFE502" />
-                                        <path d="M10.767 2.8869H8.62085V5.0718H10.767V2.8869Z" fill="#017C85" />
-                                        <path d="M6.43739 15.7984H4.29126V17.8666H6.43739V15.7984Z" fill="#017C85" />
-                                        <path d="M10.767 15.7984H8.62085V17.8666H10.767V15.7984Z" fill="#017C85" />
-                                        <path d="M6.43739 11.4685H4.29126V13.6146H6.43739V11.4685Z" fill="#017C85" />
-                                        <path d="M6.43739 7.21664H4.29126V9.3236H6.43739V7.21664Z" fill="#017C85" />
-                                        <path d="M6.43739 2.8869H4.29126V5.0718H6.43739V2.8869Z" fill="#017C85" />
-                                        <path d="M10.767 11.4685H8.62085V13.6146H10.767V11.4685Z" fill="#017C85" />
-                                        <path d="M10.767 7.21664H8.62085V9.3236H10.767V7.21664Z" fill="#017C85" />
-                                    </svg>
-                                    <svg width="40" height="16" viewBox="0 0 40 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M39.2932 2.13391C39.1927 1.7072 39.1421 1.04302 37.0792 0.898955C36.5255 0.898955 36.1233 0.948134 35.9222 0.995327C35.8206 0.852756 34.362 -0.334996 32.0975 0.0922184C29.6829 0.1871 26.6641 1.56462 24.3996 2.37086L20.2237 1.46974L17.1038 2.56062L19.1672 4.17509H19.2173L8.65156 7.92615L6.18543 6.93014L4.92788 6.45573L2.9655 5.6475L0.0966797 6.6455L0.348814 6.97733L2.51175 9.06621L2.76337 9.30366L1.90798 11.013L3.4682 10.4914L3.76982 10.2068L3.97143 10.4442L5.27899 11.6797L7.79513 14.1009H7.84566C7.89619 14.1481 7.99673 14.1481 8.14728 14.1953C9.00319 14.3378 10.965 14.0532 13.4312 13.2465C13.3806 13.2465 13.3296 13.2465 13.2796 13.1973C13.1285 13.1501 12.8774 12.9126 12.6763 12.5808C12.6263 12.4859 12.5758 12.3433 12.5253 12.2008C12.2742 11.6315 12.3247 11.1551 12.4247 10.9658C12.4247 10.9181 12.4753 10.8709 12.5253 10.8709C12.5758 10.8709 12.6258 10.8709 12.7263 10.9186C12.9274 11.0135 13.229 11.3453 13.4312 11.8689C13.4812 12.0115 13.5317 12.1536 13.5817 12.2485V12.2962C13.9334 12.1536 14.1855 12.0587 14.286 12.0115L18.4619 10.5396L15.0403 16L19.1667 14.5281L26.2603 7.78506L33.4056 5.26946L34.311 4.93762C34.3615 4.93762 34.3615 4.93762 34.4115 4.89043C35.569 4.46371 34.512 4.89043 36.8271 3.89244C39.4943 2.89444 39.2932 2.13391 39.2932 2.13391Z"
-                                            fill="#FFE502" />
-                                    </svg>
-                                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.4803 6.51841V1.63019C23.4803 0.704253 22.7318 0 21.762 0H3.61162C2.64236 0 1.84962 0.704253 1.84962 1.63019V6.51841C-0.220708 6.51841 -0.220708 10.3521 1.84962 10.3521V15.1104C1.84962 15.286 2.06993 15.5063 2.2907 15.5063H3.25949C3.4798 15.5063 3.7001 15.6824 3.7001 15.8584V19.6027C3.7001 19.7788 3.87663 20 4.14118 20H6.38803C6.60788 20 6.78394 19.7788 6.78394 19.6027V15.8584C6.78394 15.6824 7.00379 15.5063 7.22502 15.5063H18.2385C18.4588 15.5063 18.6805 15.6824 18.6805 15.8584V19.6027C18.6805 19.7788 18.8566 20 19.0764 20H21.3224C21.5865 20 21.7625 19.7788 21.7625 19.6027V15.8584C21.7625 15.6824 21.9842 15.5063 22.204 15.5063H23.0406C23.3042 15.5063 23.4803 15.286 23.4803 15.1104V10.3521C25.64 10.3526 25.64 6.51841 23.4803 6.51841Z"
-                                            fill="#FFE502" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.3223 10.8363C21.5422 10.8363 21.7182 10.6603 21.7182 10.3962V5.46185C21.7182 5.19776 21.5422 5.02031 21.3223 5.02031H12.864V10.8363C15.6395 10.8363 18.5459 10.8363 21.3223 10.8363Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.7762 10.8363V5.02031H4.05333C3.83303 5.02031 3.65649 5.19822 3.65649 5.46185V10.3962C3.65649 10.6603 3.83303 10.8363 4.05333 10.8363H12.7762Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.8065 13.3925C21.8065 12.4666 21.0142 11.7181 20.0445 11.7181C19.0319 11.7181 18.2825 12.4666 18.2825 13.3925C18.2825 14.2729 19.0319 15.0223 20.0445 15.0223C21.0146 15.0223 21.8065 14.2729 21.8065 13.3925Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M6.78397 13.3925C6.78397 12.4666 5.99078 11.7181 5.02198 11.7181C4.00894 11.7181 3.25952 12.4666 3.25952 13.3925C3.25952 14.2729 4.00894 15.0223 5.02198 15.0223C5.99078 15.0223 6.78397 14.2729 6.78397 13.3925Z"
-                                            fill="#017C85" />
-                                    </svg>
+                                <div class="card_icons card_icons_holiday">
+
+                                    <div class="card_icons_bottom">
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly.svg" alt="">
+                                            <span>11 Jul</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly2.svg" alt="">
+                                            <span>BB</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly3.svg" alt="">
+                                            <span>7</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly4.svg" alt="">
+                                            <span>1</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="card_price">From £495 </span>
+                                <div class="card_content_bottom">
+                                    <span class="card_price">From
+                                        <span class="card_price_number">£495</span>
+                                    </span>
+                                    <button class=" card_button">View deal</button>
+                                </div>
                             </div>
-                            <button class=" card_button">View deal
-                                <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.5 1L7.5 8.58333L0.5 15" stroke="#004145" />
-                                    <path d="M11.5 1L18.5 8.58333L11.5 15" stroke="#004145" />
-                                    <path d="M22.5 1L29.5 8.58333L22.5 15" stroke="#004145" />
-                                </svg>
-                            </button>
                         </div>
                     </div>
-                    <div class="card filter-card ski-holidays">
-                        <img src="./images/filter-card2.jpeg" alt="lmt">
-                        <span class="card_discount">Save you £277</span>
+
+                    <div class="card filter-card beach-holidays">
+                        <div class="save">
+                            <img src="./images/save1.svg" alt="" class="save-image">
+                            <span class="save-text"> SAVE £277</span>
+                        </div>
+                        <div class="card_image">
+                            <div class="card_icons">
+                                <div class="card_icons_top">
+                                    <button class="card_icon_top">
+                                        <img src="./images/like.svg" alt="">
+                                    </button>
+                                    <button class="card_icon_top">
+                                        <img src="./images/share.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card_content-wrap">
                             <div class="card_content">
+                                <span class="card_content_country">Portugal, Algarve</span>
                                 <h3>Iceland With Tours <br>
                                     Tours Through Iceland's Beauty</h3>
-                                <div class="card_content_icons">
-                                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 2.26326H2.65298V0H12.405V2.26326H15.0968V18.4509V19.0744V22H10.1422V19.0744H4.91583V22H0V19.0744V18.4509V2.26326Z"
-                                            fill="#FFE502" />
-                                        <path d="M10.767 2.8869H8.62085V5.0718H10.767V2.8869Z" fill="#017C85" />
-                                        <path d="M6.43739 15.7984H4.29126V17.8666H6.43739V15.7984Z" fill="#017C85" />
-                                        <path d="M10.767 15.7984H8.62085V17.8666H10.767V15.7984Z" fill="#017C85" />
-                                        <path d="M6.43739 11.4685H4.29126V13.6146H6.43739V11.4685Z" fill="#017C85" />
-                                        <path d="M6.43739 7.21664H4.29126V9.3236H6.43739V7.21664Z" fill="#017C85" />
-                                        <path d="M6.43739 2.8869H4.29126V5.0718H6.43739V2.8869Z" fill="#017C85" />
-                                        <path d="M10.767 11.4685H8.62085V13.6146H10.767V11.4685Z" fill="#017C85" />
-                                        <path d="M10.767 7.21664H8.62085V9.3236H10.767V7.21664Z" fill="#017C85" />
-                                    </svg>
-                                    <svg width="40" height="16" viewBox="0 0 40 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M39.2932 2.13391C39.1927 1.7072 39.1421 1.04302 37.0792 0.898955C36.5255 0.898955 36.1233 0.948134 35.9222 0.995327C35.8206 0.852756 34.362 -0.334996 32.0975 0.0922184C29.6829 0.1871 26.6641 1.56462 24.3996 2.37086L20.2237 1.46974L17.1038 2.56062L19.1672 4.17509H19.2173L8.65156 7.92615L6.18543 6.93014L4.92788 6.45573L2.9655 5.6475L0.0966797 6.6455L0.348814 6.97733L2.51175 9.06621L2.76337 9.30366L1.90798 11.013L3.4682 10.4914L3.76982 10.2068L3.97143 10.4442L5.27899 11.6797L7.79513 14.1009H7.84566C7.89619 14.1481 7.99673 14.1481 8.14728 14.1953C9.00319 14.3378 10.965 14.0532 13.4312 13.2465C13.3806 13.2465 13.3296 13.2465 13.2796 13.1973C13.1285 13.1501 12.8774 12.9126 12.6763 12.5808C12.6263 12.4859 12.5758 12.3433 12.5253 12.2008C12.2742 11.6315 12.3247 11.1551 12.4247 10.9658C12.4247 10.9181 12.4753 10.8709 12.5253 10.8709C12.5758 10.8709 12.6258 10.8709 12.7263 10.9186C12.9274 11.0135 13.229 11.3453 13.4312 11.8689C13.4812 12.0115 13.5317 12.1536 13.5817 12.2485V12.2962C13.9334 12.1536 14.1855 12.0587 14.286 12.0115L18.4619 10.5396L15.0403 16L19.1667 14.5281L26.2603 7.78506L33.4056 5.26946L34.311 4.93762C34.3615 4.93762 34.3615 4.93762 34.4115 4.89043C35.569 4.46371 34.512 4.89043 36.8271 3.89244C39.4943 2.89444 39.2932 2.13391 39.2932 2.13391Z"
-                                            fill="#FFE502" />
-                                    </svg>
-                                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.4803 6.51841V1.63019C23.4803 0.704253 22.7318 0 21.762 0H3.61162C2.64236 0 1.84962 0.704253 1.84962 1.63019V6.51841C-0.220708 6.51841 -0.220708 10.3521 1.84962 10.3521V15.1104C1.84962 15.286 2.06993 15.5063 2.2907 15.5063H3.25949C3.4798 15.5063 3.7001 15.6824 3.7001 15.8584V19.6027C3.7001 19.7788 3.87663 20 4.14118 20H6.38803C6.60788 20 6.78394 19.7788 6.78394 19.6027V15.8584C6.78394 15.6824 7.00379 15.5063 7.22502 15.5063H18.2385C18.4588 15.5063 18.6805 15.6824 18.6805 15.8584V19.6027C18.6805 19.7788 18.8566 20 19.0764 20H21.3224C21.5865 20 21.7625 19.7788 21.7625 19.6027V15.8584C21.7625 15.6824 21.9842 15.5063 22.204 15.5063H23.0406C23.3042 15.5063 23.4803 15.286 23.4803 15.1104V10.3521C25.64 10.3526 25.64 6.51841 23.4803 6.51841Z"
-                                            fill="#FFE502" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.3223 10.8363C21.5422 10.8363 21.7182 10.6603 21.7182 10.3962V5.46185C21.7182 5.19776 21.5422 5.02031 21.3223 5.02031H12.864V10.8363C15.6395 10.8363 18.5459 10.8363 21.3223 10.8363Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.7762 10.8363V5.02031H4.05333C3.83303 5.02031 3.65649 5.19822 3.65649 5.46185V10.3962C3.65649 10.6603 3.83303 10.8363 4.05333 10.8363H12.7762Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.8065 13.3925C21.8065 12.4666 21.0142 11.7181 20.0445 11.7181C19.0319 11.7181 18.2825 12.4666 18.2825 13.3925C18.2825 14.2729 19.0319 15.0223 20.0445 15.0223C21.0146 15.0223 21.8065 14.2729 21.8065 13.3925Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M6.78397 13.3925C6.78397 12.4666 5.99078 11.7181 5.02198 11.7181C4.00894 11.7181 3.25952 12.4666 3.25952 13.3925C3.25952 14.2729 4.00894 15.0223 5.02198 15.0223C5.99078 15.0223 6.78397 14.2729 6.78397 13.3925Z"
-                                            fill="#017C85" />
-                                    </svg>
+                                <div class="card_icons card_icons_holiday">
+
+                                    <div class="card_icons_bottom">
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly.svg" alt="">
+                                            <span>11 Jul</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly2.svg" alt="">
+                                            <span>BB</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly3.svg" alt="">
+                                            <span>7</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly4.svg" alt="">
+                                            <span>1</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="card_price">From £495 </span>
+                                <div class="card_content_bottom">
+                                    <span class="card_price">From
+                                        <span class="card_price_number">£495</span>
+                                    </span>
+                                    <button class=" card_button">View deal</button>
+                                </div>
                             </div>
-                            <button class=" card_button">Read more
-                                <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.5 1L7.5 8.58333L0.5 15" stroke="#004145" />
-                                    <path d="M11.5 1L18.5 8.58333L11.5 15" stroke="#004145" />
-                                    <path d="M22.5 1L29.5 8.58333L22.5 15" stroke="#004145" />
-                                </svg>
-                            </button>
                         </div>
                     </div>
-                    <div class="card filter-card ski-holidays">
-                        <img src="./images/filter-card2.jpeg" alt="lmt">
-                        <span class="card_discount">Save you £277</span>
+
+                    <div class="card filter-card beach-holidays">
+                        <div class="save">
+                            <img src="./images/save1.svg" alt="" class="save-image">
+                            <span class="save-text"> SAVE £277</span>
+                        </div>
+                        <div class="card_image">
+                            <div class="card_icons">
+                                <div class="card_icons_top">
+                                    <button class="card_icon_top">
+                                        <img src="./images/like.svg" alt="">
+                                    </button>
+                                    <button class="card_icon_top">
+                                        <img src="./images/share.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card_content-wrap">
                             <div class="card_content">
+                                <span class="card_content_country">Portugal, Algarve</span>
                                 <h3>Iceland With Tours <br>
                                     Tours Through Iceland's Beauty</h3>
-                                <div class="card_content_icons">
-                                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 2.26326H2.65298V0H12.405V2.26326H15.0968V18.4509V19.0744V22H10.1422V19.0744H4.91583V22H0V19.0744V18.4509V2.26326Z"
-                                            fill="#FFE502" />
-                                        <path d="M10.767 2.8869H8.62085V5.0718H10.767V2.8869Z" fill="#017C85" />
-                                        <path d="M6.43739 15.7984H4.29126V17.8666H6.43739V15.7984Z" fill="#017C85" />
-                                        <path d="M10.767 15.7984H8.62085V17.8666H10.767V15.7984Z" fill="#017C85" />
-                                        <path d="M6.43739 11.4685H4.29126V13.6146H6.43739V11.4685Z" fill="#017C85" />
-                                        <path d="M6.43739 7.21664H4.29126V9.3236H6.43739V7.21664Z" fill="#017C85" />
-                                        <path d="M6.43739 2.8869H4.29126V5.0718H6.43739V2.8869Z" fill="#017C85" />
-                                        <path d="M10.767 11.4685H8.62085V13.6146H10.767V11.4685Z" fill="#017C85" />
-                                        <path d="M10.767 7.21664H8.62085V9.3236H10.767V7.21664Z" fill="#017C85" />
-                                    </svg>
-                                    <svg width="40" height="16" viewBox="0 0 40 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M39.2932 2.13391C39.1927 1.7072 39.1421 1.04302 37.0792 0.898955C36.5255 0.898955 36.1233 0.948134 35.9222 0.995327C35.8206 0.852756 34.362 -0.334996 32.0975 0.0922184C29.6829 0.1871 26.6641 1.56462 24.3996 2.37086L20.2237 1.46974L17.1038 2.56062L19.1672 4.17509H19.2173L8.65156 7.92615L6.18543 6.93014L4.92788 6.45573L2.9655 5.6475L0.0966797 6.6455L0.348814 6.97733L2.51175 9.06621L2.76337 9.30366L1.90798 11.013L3.4682 10.4914L3.76982 10.2068L3.97143 10.4442L5.27899 11.6797L7.79513 14.1009H7.84566C7.89619 14.1481 7.99673 14.1481 8.14728 14.1953C9.00319 14.3378 10.965 14.0532 13.4312 13.2465C13.3806 13.2465 13.3296 13.2465 13.2796 13.1973C13.1285 13.1501 12.8774 12.9126 12.6763 12.5808C12.6263 12.4859 12.5758 12.3433 12.5253 12.2008C12.2742 11.6315 12.3247 11.1551 12.4247 10.9658C12.4247 10.9181 12.4753 10.8709 12.5253 10.8709C12.5758 10.8709 12.6258 10.8709 12.7263 10.9186C12.9274 11.0135 13.229 11.3453 13.4312 11.8689C13.4812 12.0115 13.5317 12.1536 13.5817 12.2485V12.2962C13.9334 12.1536 14.1855 12.0587 14.286 12.0115L18.4619 10.5396L15.0403 16L19.1667 14.5281L26.2603 7.78506L33.4056 5.26946L34.311 4.93762C34.3615 4.93762 34.3615 4.93762 34.4115 4.89043C35.569 4.46371 34.512 4.89043 36.8271 3.89244C39.4943 2.89444 39.2932 2.13391 39.2932 2.13391Z"
-                                            fill="#FFE502" />
-                                    </svg>
-                                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.4803 6.51841V1.63019C23.4803 0.704253 22.7318 0 21.762 0H3.61162C2.64236 0 1.84962 0.704253 1.84962 1.63019V6.51841C-0.220708 6.51841 -0.220708 10.3521 1.84962 10.3521V15.1104C1.84962 15.286 2.06993 15.5063 2.2907 15.5063H3.25949C3.4798 15.5063 3.7001 15.6824 3.7001 15.8584V19.6027C3.7001 19.7788 3.87663 20 4.14118 20H6.38803C6.60788 20 6.78394 19.7788 6.78394 19.6027V15.8584C6.78394 15.6824 7.00379 15.5063 7.22502 15.5063H18.2385C18.4588 15.5063 18.6805 15.6824 18.6805 15.8584V19.6027C18.6805 19.7788 18.8566 20 19.0764 20H21.3224C21.5865 20 21.7625 19.7788 21.7625 19.6027V15.8584C21.7625 15.6824 21.9842 15.5063 22.204 15.5063H23.0406C23.3042 15.5063 23.4803 15.286 23.4803 15.1104V10.3521C25.64 10.3526 25.64 6.51841 23.4803 6.51841Z"
-                                            fill="#FFE502" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.3223 10.8363C21.5422 10.8363 21.7182 10.6603 21.7182 10.3962V5.46185C21.7182 5.19776 21.5422 5.02031 21.3223 5.02031H12.864V10.8363C15.6395 10.8363 18.5459 10.8363 21.3223 10.8363Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.7762 10.8363V5.02031H4.05333C3.83303 5.02031 3.65649 5.19822 3.65649 5.46185V10.3962C3.65649 10.6603 3.83303 10.8363 4.05333 10.8363H12.7762Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.8065 13.3925C21.8065 12.4666 21.0142 11.7181 20.0445 11.7181C19.0319 11.7181 18.2825 12.4666 18.2825 13.3925C18.2825 14.2729 19.0319 15.0223 20.0445 15.0223C21.0146 15.0223 21.8065 14.2729 21.8065 13.3925Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M6.78397 13.3925C6.78397 12.4666 5.99078 11.7181 5.02198 11.7181C4.00894 11.7181 3.25952 12.4666 3.25952 13.3925C3.25952 14.2729 4.00894 15.0223 5.02198 15.0223C5.99078 15.0223 6.78397 14.2729 6.78397 13.3925Z"
-                                            fill="#017C85" />
-                                    </svg>
+                                <div class="card_icons card_icons_holiday">
+
+                                    <div class="card_icons_bottom">
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly.svg" alt="">
+                                            <span>11 Jul</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly2.svg" alt="">
+                                            <span>BB</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly3.svg" alt="">
+                                            <span>7</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly4.svg" alt="">
+                                            <span>1</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="card_price">From £495 </span>
+                                <div class="card_content_bottom">
+                                    <span class="card_price">From
+                                        <span class="card_price_number">£495</span>
+                                    </span>
+                                    <button class=" card_button">View deal</button>
+                                </div>
                             </div>
-                            <button class=" card_button">Read more
-                                <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.5 1L7.5 8.58333L0.5 15" stroke="#004145" />
-                                    <path d="M11.5 1L18.5 8.58333L11.5 15" stroke="#004145" />
-                                    <path d="M22.5 1L29.5 8.58333L22.5 15" stroke="#004145" />
-                                </svg>
-                            </button>
                         </div>
                     </div>
-                    <div class="card filter-card train-holidays">
-                        <img src="./images/filter-card3.jpeg" alt="lmt">
-                        <span class="card_discount">Save you £277</span>
+
+                    <div class="card filter-card beach-holidays">
+                        <div class="save">
+                            <img src="./images/save1.svg" alt="" class="save-image">
+                            <span class="save-text"> SAVE £277</span>
+                        </div>
+                        <div class="card_image">
+                            <div class="card_icons">
+                                <div class="card_icons_top">
+                                    <button class="card_icon_top">
+                                        <img src="./images/like.svg" alt="">
+                                    </button>
+                                    <button class="card_icon_top">
+                                        <img src="./images/share.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card_content-wrap">
                             <div class="card_content">
+                                <span class="card_content_country">Portugal, Algarve</span>
                                 <h3>Iceland With Tours <br>
                                     Tours Through Iceland's Beauty</h3>
-                                <div class="card_content_icons">
-                                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 2.26326H2.65298V0H12.405V2.26326H15.0968V18.4509V19.0744V22H10.1422V19.0744H4.91583V22H0V19.0744V18.4509V2.26326Z"
-                                            fill="#FFE502" />
-                                        <path d="M10.767 2.8869H8.62085V5.0718H10.767V2.8869Z" fill="#017C85" />
-                                        <path d="M6.43739 15.7984H4.29126V17.8666H6.43739V15.7984Z" fill="#017C85" />
-                                        <path d="M10.767 15.7984H8.62085V17.8666H10.767V15.7984Z" fill="#017C85" />
-                                        <path d="M6.43739 11.4685H4.29126V13.6146H6.43739V11.4685Z" fill="#017C85" />
-                                        <path d="M6.43739 7.21664H4.29126V9.3236H6.43739V7.21664Z" fill="#017C85" />
-                                        <path d="M6.43739 2.8869H4.29126V5.0718H6.43739V2.8869Z" fill="#017C85" />
-                                        <path d="M10.767 11.4685H8.62085V13.6146H10.767V11.4685Z" fill="#017C85" />
-                                        <path d="M10.767 7.21664H8.62085V9.3236H10.767V7.21664Z" fill="#017C85" />
-                                    </svg>
-                                    <svg width="40" height="16" viewBox="0 0 40 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M39.2932 2.13391C39.1927 1.7072 39.1421 1.04302 37.0792 0.898955C36.5255 0.898955 36.1233 0.948134 35.9222 0.995327C35.8206 0.852756 34.362 -0.334996 32.0975 0.0922184C29.6829 0.1871 26.6641 1.56462 24.3996 2.37086L20.2237 1.46974L17.1038 2.56062L19.1672 4.17509H19.2173L8.65156 7.92615L6.18543 6.93014L4.92788 6.45573L2.9655 5.6475L0.0966797 6.6455L0.348814 6.97733L2.51175 9.06621L2.76337 9.30366L1.90798 11.013L3.4682 10.4914L3.76982 10.2068L3.97143 10.4442L5.27899 11.6797L7.79513 14.1009H7.84566C7.89619 14.1481 7.99673 14.1481 8.14728 14.1953C9.00319 14.3378 10.965 14.0532 13.4312 13.2465C13.3806 13.2465 13.3296 13.2465 13.2796 13.1973C13.1285 13.1501 12.8774 12.9126 12.6763 12.5808C12.6263 12.4859 12.5758 12.3433 12.5253 12.2008C12.2742 11.6315 12.3247 11.1551 12.4247 10.9658C12.4247 10.9181 12.4753 10.8709 12.5253 10.8709C12.5758 10.8709 12.6258 10.8709 12.7263 10.9186C12.9274 11.0135 13.229 11.3453 13.4312 11.8689C13.4812 12.0115 13.5317 12.1536 13.5817 12.2485V12.2962C13.9334 12.1536 14.1855 12.0587 14.286 12.0115L18.4619 10.5396L15.0403 16L19.1667 14.5281L26.2603 7.78506L33.4056 5.26946L34.311 4.93762C34.3615 4.93762 34.3615 4.93762 34.4115 4.89043C35.569 4.46371 34.512 4.89043 36.8271 3.89244C39.4943 2.89444 39.2932 2.13391 39.2932 2.13391Z"
-                                            fill="#FFE502" />
-                                    </svg>
-                                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.4803 6.51841V1.63019C23.4803 0.704253 22.7318 0 21.762 0H3.61162C2.64236 0 1.84962 0.704253 1.84962 1.63019V6.51841C-0.220708 6.51841 -0.220708 10.3521 1.84962 10.3521V15.1104C1.84962 15.286 2.06993 15.5063 2.2907 15.5063H3.25949C3.4798 15.5063 3.7001 15.6824 3.7001 15.8584V19.6027C3.7001 19.7788 3.87663 20 4.14118 20H6.38803C6.60788 20 6.78394 19.7788 6.78394 19.6027V15.8584C6.78394 15.6824 7.00379 15.5063 7.22502 15.5063H18.2385C18.4588 15.5063 18.6805 15.6824 18.6805 15.8584V19.6027C18.6805 19.7788 18.8566 20 19.0764 20H21.3224C21.5865 20 21.7625 19.7788 21.7625 19.6027V15.8584C21.7625 15.6824 21.9842 15.5063 22.204 15.5063H23.0406C23.3042 15.5063 23.4803 15.286 23.4803 15.1104V10.3521C25.64 10.3526 25.64 6.51841 23.4803 6.51841Z"
-                                            fill="#FFE502" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.3223 10.8363C21.5422 10.8363 21.7182 10.6603 21.7182 10.3962V5.46185C21.7182 5.19776 21.5422 5.02031 21.3223 5.02031H12.864V10.8363C15.6395 10.8363 18.5459 10.8363 21.3223 10.8363Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.7762 10.8363V5.02031H4.05333C3.83303 5.02031 3.65649 5.19822 3.65649 5.46185V10.3962C3.65649 10.6603 3.83303 10.8363 4.05333 10.8363H12.7762Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.8065 13.3925C21.8065 12.4666 21.0142 11.7181 20.0445 11.7181C19.0319 11.7181 18.2825 12.4666 18.2825 13.3925C18.2825 14.2729 19.0319 15.0223 20.0445 15.0223C21.0146 15.0223 21.8065 14.2729 21.8065 13.3925Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M6.78397 13.3925C6.78397 12.4666 5.99078 11.7181 5.02198 11.7181C4.00894 11.7181 3.25952 12.4666 3.25952 13.3925C3.25952 14.2729 4.00894 15.0223 5.02198 15.0223C5.99078 15.0223 6.78397 14.2729 6.78397 13.3925Z"
-                                            fill="#017C85" />
-                                    </svg>
+                                <div class="card_icons card_icons_holiday">
+
+                                    <div class="card_icons_bottom">
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly.svg" alt="">
+                                            <span>11 Jul</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly2.svg" alt="">
+                                            <span>BB</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly3.svg" alt="">
+                                            <span>7</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly4.svg" alt="">
+                                            <span>1</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="card_price">From £495 </span>
+                                <div class="card_content_bottom">
+                                    <span class="card_price">From
+                                        <span class="card_price_number">£495</span>
+                                    </span>
+                                    <button class=" card_button">View deal</button>
+                                </div>
                             </div>
-                            <button class=" card_button">Read more
-                                <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.5 1L7.5 8.58333L0.5 15" stroke="#004145" />
-                                    <path d="M11.5 1L18.5 8.58333L11.5 15" stroke="#004145" />
-                                    <path d="M22.5 1L29.5 8.58333L22.5 15" stroke="#004145" />
-                                </svg>
-                            </button>
                         </div>
                     </div>
-                    <div class="card filter-card train-holidays">
-                        <img src="./images/filter-card3.jpeg" alt="lmt">
-                        <span class="card_discount">Save you £277</span>
+
+                    <div class="card filter-card beach-holidays">
+                        <div class="save">
+                            <img src="./images/save1.svg" alt="" class="save-image">
+                            <span class="save-text"> SAVE £277</span>
+                        </div>
+                        <div class="card_image">
+                            <div class="card_icons">
+                                <div class="card_icons_top">
+                                    <button class="card_icon_top">
+                                        <img src="./images/like.svg" alt="">
+                                    </button>
+                                    <button class="card_icon_top">
+                                        <img src="./images/share.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card_content-wrap">
                             <div class="card_content">
+                                <span class="card_content_country">Portugal, Algarve</span>
                                 <h3>Iceland With Tours <br>
                                     Tours Through Iceland's Beauty</h3>
-                                <div class="card_content_icons">
-                                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 2.26326H2.65298V0H12.405V2.26326H15.0968V18.4509V19.0744V22H10.1422V19.0744H4.91583V22H0V19.0744V18.4509V2.26326Z"
-                                            fill="#FFE502" />
-                                        <path d="M10.767 2.8869H8.62085V5.0718H10.767V2.8869Z" fill="#017C85" />
-                                        <path d="M6.43739 15.7984H4.29126V17.8666H6.43739V15.7984Z" fill="#017C85" />
-                                        <path d="M10.767 15.7984H8.62085V17.8666H10.767V15.7984Z" fill="#017C85" />
-                                        <path d="M6.43739 11.4685H4.29126V13.6146H6.43739V11.4685Z" fill="#017C85" />
-                                        <path d="M6.43739 7.21664H4.29126V9.3236H6.43739V7.21664Z" fill="#017C85" />
-                                        <path d="M6.43739 2.8869H4.29126V5.0718H6.43739V2.8869Z" fill="#017C85" />
-                                        <path d="M10.767 11.4685H8.62085V13.6146H10.767V11.4685Z" fill="#017C85" />
-                                        <path d="M10.767 7.21664H8.62085V9.3236H10.767V7.21664Z" fill="#017C85" />
-                                    </svg>
-                                    <svg width="40" height="16" viewBox="0 0 40 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M39.2932 2.13391C39.1927 1.7072 39.1421 1.04302 37.0792 0.898955C36.5255 0.898955 36.1233 0.948134 35.9222 0.995327C35.8206 0.852756 34.362 -0.334996 32.0975 0.0922184C29.6829 0.1871 26.6641 1.56462 24.3996 2.37086L20.2237 1.46974L17.1038 2.56062L19.1672 4.17509H19.2173L8.65156 7.92615L6.18543 6.93014L4.92788 6.45573L2.9655 5.6475L0.0966797 6.6455L0.348814 6.97733L2.51175 9.06621L2.76337 9.30366L1.90798 11.013L3.4682 10.4914L3.76982 10.2068L3.97143 10.4442L5.27899 11.6797L7.79513 14.1009H7.84566C7.89619 14.1481 7.99673 14.1481 8.14728 14.1953C9.00319 14.3378 10.965 14.0532 13.4312 13.2465C13.3806 13.2465 13.3296 13.2465 13.2796 13.1973C13.1285 13.1501 12.8774 12.9126 12.6763 12.5808C12.6263 12.4859 12.5758 12.3433 12.5253 12.2008C12.2742 11.6315 12.3247 11.1551 12.4247 10.9658C12.4247 10.9181 12.4753 10.8709 12.5253 10.8709C12.5758 10.8709 12.6258 10.8709 12.7263 10.9186C12.9274 11.0135 13.229 11.3453 13.4312 11.8689C13.4812 12.0115 13.5317 12.1536 13.5817 12.2485V12.2962C13.9334 12.1536 14.1855 12.0587 14.286 12.0115L18.4619 10.5396L15.0403 16L19.1667 14.5281L26.2603 7.78506L33.4056 5.26946L34.311 4.93762C34.3615 4.93762 34.3615 4.93762 34.4115 4.89043C35.569 4.46371 34.512 4.89043 36.8271 3.89244C39.4943 2.89444 39.2932 2.13391 39.2932 2.13391Z"
-                                            fill="#FFE502" />
-                                    </svg>
-                                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.4803 6.51841V1.63019C23.4803 0.704253 22.7318 0 21.762 0H3.61162C2.64236 0 1.84962 0.704253 1.84962 1.63019V6.51841C-0.220708 6.51841 -0.220708 10.3521 1.84962 10.3521V15.1104C1.84962 15.286 2.06993 15.5063 2.2907 15.5063H3.25949C3.4798 15.5063 3.7001 15.6824 3.7001 15.8584V19.6027C3.7001 19.7788 3.87663 20 4.14118 20H6.38803C6.60788 20 6.78394 19.7788 6.78394 19.6027V15.8584C6.78394 15.6824 7.00379 15.5063 7.22502 15.5063H18.2385C18.4588 15.5063 18.6805 15.6824 18.6805 15.8584V19.6027C18.6805 19.7788 18.8566 20 19.0764 20H21.3224C21.5865 20 21.7625 19.7788 21.7625 19.6027V15.8584C21.7625 15.6824 21.9842 15.5063 22.204 15.5063H23.0406C23.3042 15.5063 23.4803 15.286 23.4803 15.1104V10.3521C25.64 10.3526 25.64 6.51841 23.4803 6.51841Z"
-                                            fill="#FFE502" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.3223 10.8363C21.5422 10.8363 21.7182 10.6603 21.7182 10.3962V5.46185C21.7182 5.19776 21.5422 5.02031 21.3223 5.02031H12.864V10.8363C15.6395 10.8363 18.5459 10.8363 21.3223 10.8363Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.7762 10.8363V5.02031H4.05333C3.83303 5.02031 3.65649 5.19822 3.65649 5.46185V10.3962C3.65649 10.6603 3.83303 10.8363 4.05333 10.8363H12.7762Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M21.8065 13.3925C21.8065 12.4666 21.0142 11.7181 20.0445 11.7181C19.0319 11.7181 18.2825 12.4666 18.2825 13.3925C18.2825 14.2729 19.0319 15.0223 20.0445 15.0223C21.0146 15.0223 21.8065 14.2729 21.8065 13.3925Z"
-                                            fill="#017C85" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M6.78397 13.3925C6.78397 12.4666 5.99078 11.7181 5.02198 11.7181C4.00894 11.7181 3.25952 12.4666 3.25952 13.3925C3.25952 14.2729 4.00894 15.0223 5.02198 15.0223C5.99078 15.0223 6.78397 14.2729 6.78397 13.3925Z"
-                                            fill="#017C85" />
-                                    </svg>
+                                <div class="card_icons card_icons_holiday">
+
+                                    <div class="card_icons_bottom">
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly.svg" alt="">
+                                            <span>11 Jul</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly2.svg" alt="">
+                                            <span>BB</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly3.svg" alt="">
+                                            <span>7</span>
+                                        </div>
+                                        <div class="card_icon_bottom">
+                                            <img src="./images/fly4.svg" alt="">
+                                            <span>1</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="card_price">From £495 </span>
+                                <div class="card_content_bottom">
+                                    <span class="card_price">From
+                                        <span class="card_price_number">£495</span>
+                                    </span>
+                                    <button class=" card_button">View deal</button>
+                                </div>
                             </div>
-                            <button class=" card_button">Read more
-                                <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.5 1L7.5 8.58333L0.5 15" stroke="#004145" />
-                                    <path d="M11.5 1L18.5 8.58333L11.5 15" stroke="#004145" />
-                                    <path d="M22.5 1L29.5 8.58333L22.5 15" stroke="#004145" />
-                                </svg>
-                            </button>
                         </div>
                     </div>
 
@@ -1245,7 +1150,7 @@
                             <img class="instagram" src="./images/logos/footer-instagram.svg" alt="instagram" width="42"
                                 height="42">
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=100089408523464">
+                        <a href="https://www.facebook.com/profile.php?id=100089408523464" target="_blank">
                             <img src="./images/logos/footer-facebook.svg" alt="facebook" target="_blank">
                         </a>
                     </div>
@@ -1316,7 +1221,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="./node_modules/swiper/swiper.min.js"></script>
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>

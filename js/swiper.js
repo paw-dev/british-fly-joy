@@ -13,14 +13,32 @@
 // import 'node_modules/swiper/css/pagination';
 
 
-const swiper = new Swiper('.swiper-container_cards', {
+const swiper = new Swiper('.swiper-container_cards_lm', {
     // Стрелки
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 
-    slideToClickedSlide: true,
+    pagination: {
+        el: '.swiper-pagination',
+        // Буллеты
+        type: 'bullets',
+        clickable: true,
+        // hideOnClick: false,
+        // dynamicBullets: true,
+        // renderBullet: function (index, className) {
+        //     return '<span class="' + className + '">' + (index + 1) + '</span>';
+        // },
+
+        // Фракция
+        // type: 'fraction',
+
+        // Прогрессбар
+        // type: 'prorgessbar',
+    },
+
+    // slideToClickedSlide: true,
 
     // Автовысота
     // autoHeight: true,
@@ -28,7 +46,7 @@ const swiper = new Swiper('.swiper-container_cards', {
     slidesPerView: 1,
 
     // Отступы
-    spaceBetween: 24,
+    spaceBetween: 10,
 
     // Бесконечность
     loop: true,

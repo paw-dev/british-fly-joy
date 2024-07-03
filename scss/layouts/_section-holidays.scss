@@ -40,9 +40,14 @@
       flex: 1 1 100%; /* Кнопки занимают всю ширину при маленьких разрешениях */
     }
   }
+  .active-filter {
+    background-color: $color-brand;
+    border-image: linear-gradient(103deg, #ffe401, #ffe401) 1% 1%;
+  }
 }
 
-.holidays_button:hover {
+.holidays_button:hover,
+.active-filter {
   background-color: $color-brand;
   border-image: linear-gradient(103deg, #ffe401, #ffe401) 1% 1%;
 }
@@ -123,14 +128,15 @@
 
 .cards_holidays {
   flex-wrap: wrap;
-  column-gap: 24px;
+  column-gap: 10px;
   row-gap: 26px;
   justify-content: flex-start;
+  margin-bottom: 60px;
 }
 
-// .filter-card {
-//   display: none;
-// }
+.filter-card {
+  display: none;
+}
 
 .show {
   display: block;

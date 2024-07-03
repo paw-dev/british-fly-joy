@@ -1,5 +1,5 @@
 .cards {
-  margin: 100px auto;
+  margin: 100px auto 132px;
   display: flex;
   // gap: 24px;
   justify-content: space-evenly;
@@ -16,52 +16,107 @@
     position: relative;
     max-width: 563px;
     // max-width: 352px;
+    padding: 19px 7px;
 
     @media screen and (max-width: $bp-tablet) {
       max-width: 352px;
+      margin: 0 auto;
     }
 
-    img {
-      width: 100%;
-      -o-object-fit: cover;
-      object-fit: cover;
-      height: 100%;
-    }
-
-    .card_discount {
-      background: #ff0f00;
-      padding: 10px 24px;
-      display: inline-block;
+    .save {
       position: absolute;
-      top: 0;
-      font-size: 24px;
-      line-height: 117%;
-      color: $color-text-light;
-      @media screen and (max-width: $bp-tablet) {
-        font-size: 18px;
+      top: 0.5px;
+      left: 0.5px;
+
+      .save-text {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 165%;
+        color: #fe0300;
+        transform: rotate(321deg);
+        position: absolute;
+        left: 5px;
+        top: 33px;
       }
     }
 
-    .card_content-wrap {
-      background-color: rgba(1, 124, 133, 0.67);
-      position: absolute;
-      bottom: 0;
+    .card_image {
       width: 100%;
-      height: 48%;
-      transition: background-color 0.3s ease;
+      height: 100%;
+      background-image: url("/images/lmt-card.jpg");
+      // min-height: 190px;
+      height: 190px;
+      background-size: cover;
+    }
+
+    .card_icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 8px;
+      height: 100%;
+      // width: 100%;
+
+      .card_icons_top,
+      .card_icons_bottom {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+
+        .card_icon_top,
+        .card_icon_bottom {
+          padding: 8px;
+          background-color: white;
+          border-radius: 40px;
+          border: none;
+        }
+
+        .card_icon_top {
+          cursor: pointer;
+        }
+
+        .card_icon_bottom {
+          display: flex;
+          gap: 4px;
+          border: 0.5px solid $color-brand-dark;
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    .card_icons_holiday {
+      margin-bottom: 32px;
+    }
+
+    .card_content-wrap {
+      background-color: transparent;
+      // position: absolute;
+      // bottom: 0;
+      width: 100%;
+      // height: 48%;
+      // transition: background-color 0.3s ease;
 
       .card_content {
-        padding: 26px 20px 60px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+        padding: 24px 12px 12px;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // align-items: center;
+        color: $color-brand-dark;
+
+        .card_content_country {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 90%;
+          text-decoration: underline;
+          margin-bottom: 24px;
+          display: inline-block;
+        }
 
         h3 {
           font-size: 24px;
           line-height: 117%;
-          color: $color-text-light;
           margin-bottom: 38px;
-          grid-column: 1 / 3;
+          // grid-column: 1 / 3;
 
           @media screen and (max-width: $bp-tablet) {
             font-size: 20px;
@@ -70,46 +125,63 @@
           }
         }
 
+        .card_content_bottom {
+          display: flex;
+          gap: 34px;
+          align-items: center;
+          justify-content: space-between;
+
+          .card_price {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 67%;
+
+            .card_price_number {
+              font-weight: 700;
+              font-size: 35px;
+            }
+
+            @media screen and (max-width: $bp-tablet) {
+              font-size: 25px;
+            }
+          }
+          .card_button {
+            // opacity: 0;
+            // transition: opacity 0.3s ease;
+            // position: absolute;
+            // bottom: 0;
+            background-color: $color-brand;
+            color: $color-brand-dark;
+            padding: 16px 30px;
+            width: auto;
+          }
+        }
+
         .card_content_icons {
           display: flex;
           gap: 24px;
         }
-        .card_price {
-          font-size: 32px;
-          line-height: 87%;
-          color: $color-text-light;
-
-          @media screen and (max-width: $bp-tablet) {
-            font-size: 25px;
-          }
-        }
       }
-    }
-    .card_button {
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      position: absolute;
-      bottom: 0;
     }
   }
 
-  .card:hover {
-    .card_content-wrap {
-      background-color: rgb(1, 124, 133);
-    }
-    .card_button {
-      opacity: 1;
-      background-color: $color-brand;
-      color: $color-brand-dark;
+  // .card:hover {
+  //   .card_content-wrap {
+  //     background-color: rgb(1, 124, 133);
+  //   }
+  //   .card_button {
+  //     opacity: 1;
 
-      @media screen and (max-width: $bp-mobile) {
-        display: none;
-      }
-    }
-    path {
-      stroke: $color-brand-dark;
-    }
-  }
+  //     color: $color-brand-dark;
+
+  //     @media screen and (max-width: $bp-mobile) {
+  //       display: none;
+  //     }
+  //   }
+  //   path {
+  //     stroke: $color-brand-dark;
+  //   }
+  // }
 
   .card-cruises,
   .card-villas {
