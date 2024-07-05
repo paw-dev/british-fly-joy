@@ -420,15 +420,13 @@
   }
 
   .cards_villas_grid:last-child {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     .card-villas:first-child {
       grid-area: 1 / 1 / 2 / 3;
       max-width: 1200px;
       height: 282px;
       width: 100%;
       @media screen and (max-width: $bp-mobile) {
-        width: 358px;
+        // width: 358px;
         height: 140px;
       }
     }
@@ -438,7 +436,7 @@
       height: 282px;
       width: 100%;
       @media screen and (max-width: $bp-mobile) {
-        width: 171px;
+        // width: 171px;
         height: 140px;
       }
     }
@@ -448,7 +446,7 @@
       height: 282px;
       width: 100%;
       @media screen and (max-width: $bp-mobile) {
-        width: 171px;
+        // width: 171px;
         height: 140px;
       }
     }
