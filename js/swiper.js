@@ -74,6 +74,10 @@
 // const swiper1 = initializeSwiper('.swiper-container_cards_lm');
 // const swiper2 = initializeSwiper('.swiper-container_cards_cruises');
 
+// // import function to register Swiper custom elements
+// import { register } from 'swiper/element/bundle';
+// // register Swiper custom elements
+// register();
 
 const swiper_lm = new Swiper('.swiper-container_cards_lm',  {
     navigation: {
