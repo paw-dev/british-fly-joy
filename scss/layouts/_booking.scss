@@ -5,7 +5,7 @@
   .booking-info {
     padding: 63px;
     background: linear-gradient(rgba(1, 124, 133, 0.5), rgba(1, 124, 133, 0.5)),
-      url("/images/booking-img.jpg");
+      url("./images/booking-img.jpg");
     width: 384px;
     min-height: 1023px;
     text-align: center;
@@ -105,7 +105,7 @@
       }
 
       button {
-        background: url("/images/button-plus.svg"), $color-brand-dark;
+        background: url("./images/button-plus.svg"), $color-brand-dark;
         background-repeat: no-repeat;
         background-position: center center;
         color: $color-text-light;
