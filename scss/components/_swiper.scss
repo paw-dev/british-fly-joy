@@ -71,8 +71,7 @@
   bottom: var(--swiper-pagination-bottom, 145px);
   @media screen and (max-width: $bp-tablet) {
     gap: 0px;
-    bottom: var(--swiper-pagination-bottom, 85px);
-    bottom: var(--swiper-pagination-bottom, 64px);
+    bottom: var(--swiper-pagination-bottom, 80px);
   }
 }
 

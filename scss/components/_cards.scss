@@ -123,6 +123,7 @@
 
     .card_icons_holiday {
       margin-bottom: 32px;
+      padding: 0;
     }
 
     .card_content-wrap {
@@ -212,7 +213,8 @@
             padding: 16px 30px;
             width: auto;
             @media screen and (max-width: $bp-tablet) {
-              padding: 12px 70px;
+              padding: 12px 20px;
+              width: 215px;
             }
           }
         }
@@ -446,7 +448,6 @@
       height: 282px;
       width: 100%;
       @media screen and (max-width: $bp-mobile) {
-        // width: 171px;
         height: 140px;
       }
     }
@@ -456,6 +457,10 @@
 .cards_villas {
   margin: 100px 0px 132px;
   max-width: 1200px;
+
+  @media screen and (max-width: $bp-tablet) {
+    margin: 32px 0 56px;
+  }
 
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     display: none;
