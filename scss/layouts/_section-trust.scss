@@ -1,17 +1,17 @@
 .trust {
-  .trust_background {
-    background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        transparent 45%,
-        transparent 55%,
-        #ffffff 100%
-      ),
-      linear-gradient(305deg, #ffe401 0%, #007b84 100%);
-    padding-top: 1px;
-    // box-shadow: inset 0px 200px 75px -120px rgba(255, 255, 255, 1),
-    //   inset 0px -200px 72px -60px rgba(255, 255, 255, 1);
-  }
+  // .trust_background {
+  //   background: linear-gradient(
+  //       to bottom,
+  //       #ffffff 0%,
+  //       transparent 45%,
+  //       transparent 55%,
+  //       #ffffff 100%
+  //     ),
+  //     linear-gradient(305deg, #ffe401 0%, #007b84 100%);
+  //   padding-top: 1px;
+  //   // box-shadow: inset 0px 200px 75px -120px rgba(255, 255, 255, 1),
+  //   //   inset 0px -200px 72px -60px rgba(255, 255, 255, 1);
+  // }
 
   .trust-items {
     display: flex;
@@ -34,9 +34,11 @@
       align-items: center;
       gap: 60px;
       position: relative;
+      padding-left: 50px;
 
       @media screen and (max-width: $bp-mobile) {
         gap: 12px;
+        padding-left: 10px;
       }
 
       img {
@@ -60,16 +62,24 @@
 
     .trust-item::before {
       position: absolute;
-      left: -130px;
+      // left: -130px;
+      // left: -50px;
       top: -12%;
       z-index: 0;
       @extend %primary-font;
       font-size: 450px;
       line-height: 6%;
-      -webkit-text-stroke: 3px #fff;
-      color: rgba(255, 255, 255, 0.6);
+      -webkit-text-stroke: 3px $color-brand-dark;
+      // color: rgba(255, 255, 255, 0.6);
+      color: rgba(1, 124, 133, 0.3);
+
+      @media screen and (max-width: 1105px) {
+        font-size: 270px;
+        top: 9%;
+        left: -5px;
+      }
       @media screen and (max-width: $bp-mobile) {
-        -webkit-text-stroke: 2px #fff;
+        -webkit-text-stroke: 2px $color-brand-dark;
         left: -12px;
         top: 5%;
         font-size: 90px;
@@ -78,12 +88,13 @@
 
     .trust-item:nth-child(1):before {
       content: "1";
-      left: -102px;
+      left: -50px;
       @extend %primary-font;
-      font-size: 450px;
       line-height: 6%;
 
-      color: rgba(255, 255, 255, 0.6);
+      @media screen and (max-width: 1105px) {
+        left: -5px;
+      }
 
       @media screen and (max-width: $bp-mobile) {
         left: -12px;
@@ -93,6 +104,10 @@
 
     .trust-item:nth-child(2):before {
       content: "2";
+      left: -85px;
+      @media screen and (max-width: 1105px) {
+        left: -32px;
+      }
       @media screen and (max-width: $bp-mobile) {
         left: -27px;
       }
@@ -101,7 +116,11 @@
     .trust-item:nth-child(3):before {
       content: "3";
       font-size: 380px;
-      left: -120px;
+      left: -60px;
+      @media screen and (max-width: 1105px) {
+        font-size: 270px;
+        left: -27px;
+      }
       @media screen and (max-width: $bp-mobile) {
         font-size: 80px;
         left: -25px;
@@ -111,10 +130,13 @@
     .trust-item:last-child::before {
       content: "4";
       font-size: 380px;
-      left: -120px;
+      left: -60px;
+      @media screen and (max-width: 1105px) {
+        font-size: 270px;
+        left: -23px;
+      }
       @media screen and (max-width: $bp-mobile) {
         font-size: 80px;
-        left: -23px;
       }
     }
   }

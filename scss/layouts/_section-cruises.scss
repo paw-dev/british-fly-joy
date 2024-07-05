@@ -1,5 +1,9 @@
 .cruises-bg {
   background-image: url(../../images/cruises-bg.jpeg);
+  background-size: 100% 58%;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-bottom: 0;
 
   @media screen and (max-width: $bp-mobile) {
     .offers-bg {

@@ -130,8 +130,18 @@
   flex-wrap: wrap;
   column-gap: 10px;
   row-gap: 26px;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-bottom: 60px;
+
+  .card {
+    width: calc((100% - 30px) / 3);
+    @media screen and (max-width: 1024px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (max-width: 700px) {
+      width: calc((100% - 30px) / 1);
+    }
+  }
 }
 
 .filter-card {

@@ -24,6 +24,7 @@
 }
 .swiper-button-prev,
 .swiper-button-next {
+  top: var(--swiper-navigation-top-offset, 44%);
   @media screen and (max-width: 1320px) {
     display: none;
   }
@@ -45,6 +46,19 @@
   align-items: center;
   gap: 24px;
   bottom: var(--swiper-pagination-bottom, 145px);
+  @media screen and (max-width: $bp-tablet) {
+    gap: 0px;
+    bottom: var(--swiper-pagination-bottom, 85px);
+    bottom: var(--swiper-pagination-bottom, 64px);
+  }
+}
+
+.cards_cruises {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    @media screen and (max-width: $bp-tablet) {
+      bottom: var(--swiper-pagination-bottom, 64px);
+    }
+  }
 }
 
 .swiper-pagination-bullet {
@@ -54,6 +68,10 @@
   width: 24px;
   height: 24px;
   transition: background 0.3s, width 0.3s, height 0.3s, border-radius 0.3s;
+  @media screen and (max-width: $bp-tablet) {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -62,6 +80,10 @@
   height: 24px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
   background: $color-brand-dark;
+  @media screen and (max-width: $bp-tablet) {
+    width: 36px;
+    height: 12px;
+  }
 }
 
 // .wrap {

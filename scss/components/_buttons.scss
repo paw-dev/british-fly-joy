@@ -13,14 +13,16 @@
   cursor: pointer;
   gap: 12px;
   background-color: $color-brand-dark;
+  background-color: $color-brand;
   color: $color-text-light;
+  color: $color-dark-green;
 
   @media screen and (max-width: $bp-tablet) {
     font-size: 18px;
     padding: 14px;
   }
 
-  @media screen and (max-width: $bp-mobile) {
+  @media screen and (max-width: $bp-tablet) {
     font-size: 12px;
     line-height: 133%;
     padding: 12px;
@@ -28,6 +30,19 @@
   svg {
     path {
       stroke: $color-text-light;
+      stroke: $color-dark-green;
+    }
+  }
+}
+
+.holidays {
+  .section_read-more_button {
+    background-color: $color-brand-dark;
+    color: $color-text-light;
+    svg {
+      path {
+        stroke: $color-text-light;
+      }
     }
   }
 }

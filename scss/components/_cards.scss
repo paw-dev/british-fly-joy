@@ -19,7 +19,7 @@
     padding: 19px 7px;
 
     @media screen and (max-width: $bp-tablet) {
-      max-width: 352px;
+      max-width: 358px;
       margin: 0 auto;
     }
 
@@ -27,6 +27,7 @@
       position: absolute;
       top: 0.5px;
       left: 0.5px;
+      z-index: 2;
 
       .save-text {
         font-weight: 600;
@@ -43,25 +44,40 @@
     .card_image {
       width: 100%;
       height: 100%;
-      background-image: url("/images/lmt-card.jpg");
+      // background-image: url("/images/lmt-card.jpg");
       // min-height: 190px;
       height: 190px;
-      background-size: cover;
+      // background-size: cover;
+      position: relative;
+      @media screen and (max-width: 1024px) {
+        height: 228px;
+      }
+    }
+    .card_image > img {
+      object-fit: cover;
+      height: 100%;
     }
 
     .card_icons {
+      position: absolute;
+      top: 0;
+      right: 0;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 8px;
       height: 100%;
       // width: 100%;
+      @media screen and (max-width: $bp-tablet) {
+        padding: 12px;
+      }
 
       .card_icons_top,
       .card_icons_bottom {
         display: flex;
         justify-content: flex-end;
         gap: 12px;
+        flex-wrap: wrap;
 
         .card_icon_top,
         .card_icon_bottom {
@@ -73,6 +89,11 @@
 
         .card_icon_top {
           cursor: pointer;
+          @media screen and (max-width: $bp-tablet) {
+            width: 25px;
+            height: 25px;
+            padding: 4px;
+          }
         }
 
         .card_icon_bottom {
@@ -80,6 +101,23 @@
           gap: 4px;
           border: 0.5px solid $color-brand-dark;
           box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+          @media screen and (max-width: $bp-tablet) {
+            border-radius: 20px;
+            border: none;
+            padding: 3px 10px;
+          }
+          span {
+            @media screen and (max-width: 1024px) {
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 150%;
+            }
+            @media screen and (max-width: $bp-tablet) {
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 150%;
+            }
+          }
         }
       }
     }
@@ -102,6 +140,9 @@
         // grid-template-columns: 1fr 1fr;
         // align-items: center;
         color: $color-brand-dark;
+        @media screen and (max-width: $bp-tablet) {
+          padding: 7px 10px 8px 15px;
+        }
 
         .card_content_country {
           font-weight: 400;
@@ -110,6 +151,11 @@
           text-decoration: underline;
           margin-bottom: 24px;
           display: inline-block;
+          @media screen and (max-width: $bp-tablet) {
+            font-size: 12px;
+            line-height: 150%;
+            margin-bottom: 12px;
+          }
         }
 
         h3 {
@@ -120,29 +166,41 @@
 
           @media screen and (max-width: $bp-tablet) {
             font-size: 20px;
-            margin-bottom: 38px;
-            grid-column: 1 / 3;
+            margin-bottom: 18px;
+            // grid-column: 1 / 3;
+          }
+          @media screen and (max-width: $bp-mobile) {
+            font-size: 12px;
+            line-height: 150%;
           }
         }
 
         .card_content_bottom {
           display: flex;
-          gap: 34px;
+          gap: 4px;
           align-items: center;
           justify-content: space-between;
+          @media screen and (max-width: $bp-tablet) {
+            gap: 12px;
+          }
 
           .card_price {
             font-weight: 500;
             font-size: 24px;
             line-height: 67%;
+            display: flex;
+            gap: 4px;
+            @media screen and (max-width: $bp-tablet) {
+              font-size: 16px;
+              line-height: 100%;
+            }
 
             .card_price_number {
               font-weight: 700;
               font-size: 35px;
-            }
-
-            @media screen and (max-width: $bp-tablet) {
-              font-size: 25px;
+              @media screen and (max-width: $bp-tablet) {
+                font-size: 24px;
+              }
             }
           }
           .card_button {
@@ -154,6 +212,9 @@
             color: $color-brand-dark;
             padding: 16px 30px;
             width: auto;
+            @media screen and (max-width: $bp-tablet) {
+              padding: 12px 70px;
+            }
           }
         }
 
@@ -182,43 +243,232 @@
   //     stroke: $color-brand-dark;
   //   }
   // }
-
-  .card-cruises,
-  .card-villas {
-    position: relative;
+  .swiper-slide {
     display: flex;
     justify-content: center;
-    @media screen and (max-width: $bp-mobile) {
-      // width: 358px;
-      height: 200px;
-      max-width: 385px;
-      margin: 0 auto;
-    }
+  }
+  .card-cruises {
+    // position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    width: 384px;
+    height: 495px;
+    position: relative;
 
-    img {
-      width: 100%;
-      object-fit: cover;
-      height: 100%;
+    @media screen and (max-width: $bp-tablet) {
+      // width: 358px;
+      height: 308px;
+      max-width: 342px;
+      margin: 0 auto;
     }
 
     .card_content-cruises,
     .card_content-villas {
+      // position: absolute;
+      // top: 50%;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: flex-end;
+      // padding-bottom: 32px;
+      // width: 100%;
+      // height: 495px;
+      // // background-image: url("/images/Ocean-cruises.jpeg");
+      // background-size: cover;
+      // background-position: center center;
+      border-top: 6px solid white;
+      border-right: 6px solid white;
+      border-left: 6px solid white;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
       position: absolute;
-      top: 50%;
-
+      z-index: -1;
+      top: 0;
+      @media screen and (max-width: $bp-mobile) {
+        border-top: 4px solid white;
+        border-right: 4px solid white;
+        border-left: 4px solid white;
+      }
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+      }
       h3 {
         font-size: 32px;
         line-height: 87%;
         color: $color-text-light;
+        position: absolute;
+        bottom: 32px;
+        // right: 50%;
+        // transform: translate(50%, 0);
+        right: 22%;
         @media screen and (max-width: $bp-mobile) {
-          font-size: 12px;
+          font-size: 20px;
+          line-height: 80%;
+          right: 30%;
         }
       }
+    }
 
-      button {
+    button {
+      opacity: 0;
+      color: $color-brand-dark;
+      background-color: $color-brand;
+      width: calc(100% - 12px);
+    }
+  }
+
+  .card-cruises:hover button {
+    opacity: 1;
+  }
+
+  .cards_villas_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    justify-items: center;
+    max-width: 1200px;
+    @media screen and (max-width: $bp-mobile) {
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+    }
+
+    .card-villas {
+      padding: 0;
+      position: relative;
+      max-width: none;
+      background: linear-gradient(
+        180deg,
+        rgba(217, 217, 217, 0) 0%,
+        rgba(217, 217, 217, 0) 70%,
+        #017c85 100%
+      );
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         position: absolute;
-        bottom: 0;
+        z-index: -1;
       }
+
+      .card_content-villas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-end;
+        padding-bottom: 32px;
+        @media screen and (max-width: $bp-mobile) {
+          padding-bottom: 8px;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 87%;
+          color: $color-text-light;
+          text-align: center;
+          @media screen and (max-width: $bp-mobile) {
+            font-size: 12px;
+            line-height: 133%;
+          }
+        }
+      }
+    }
+  }
+
+  .cards_villas_grid:first-child {
+    .card-villas:first-child {
+      grid-area: 1 / 1 / 3 / 2;
+      width: 100%;
+      max-width: 588px;
+      height: 588px;
+      @media screen and (max-width: $bp-mobile) {
+        // width: 171px;
+        height: 296px;
+      }
+    }
+    .card-villas:nth-child(2) {
+      grid-area: 1 / 2 / 2 / 3;
+      max-width: 588px;
+      height: 282px;
+      width: 100%;
+      @media screen and (max-width: $bp-mobile) {
+        // width: 171px;
+        height: 140px;
+      }
+    }
+    .card-villas:last-child {
+      grid-area: 2 / 2 / 3 / 3;
+      max-width: 588px;
+      height: 282px;
+      width: 100%;
+      @media screen and (max-width: $bp-mobile) {
+        // width: 171px;
+        height: 140px;
+      }
+    }
+  }
+
+  .cards_villas_grid:last-child {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .card-villas:first-child {
+      grid-area: 1 / 1 / 2 / 3;
+      max-width: 1200px;
+      height: 282px;
+      width: 100%;
+      @media screen and (max-width: $bp-mobile) {
+        width: 358px;
+        height: 140px;
+      }
+    }
+    .card-villas:nth-child(2) {
+      grid-area: 2 / 1 / 3 / 2;
+      max-width: 588px;
+      height: 282px;
+      width: 100%;
+      @media screen and (max-width: $bp-mobile) {
+        width: 171px;
+        height: 140px;
+      }
+    }
+    .card-villas:last-child {
+      grid-area: 2 / 2 / 3 / 3;
+      max-width: 588px;
+      height: 282px;
+      width: 100%;
+      @media screen and (max-width: $bp-mobile) {
+        width: 171px;
+        height: 140px;
+      }
+    }
+  }
+}
+
+.cards_villas {
+  margin: 100px 0px 132px;
+  max-width: 1200px;
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+  }
+}
+
+.cards_holidays {
+  .card_content {
+    .card_icons {
+      position: relative;
     }
   }
 }

@@ -31,6 +31,7 @@
       display: flex;
       justify-content: space-between;
       position: relative;
+      gap: 10px;
 
       span {
         font-size: 24px;
@@ -53,6 +54,7 @@
         cursor: pointer;
         outline: none;
         transition: 0.4s;
+        width: 76px;
 
         svg {
           @media screen and (max-width: $bp-mobile) {
