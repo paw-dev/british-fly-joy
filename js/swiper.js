@@ -106,6 +106,7 @@ const swiper_lm = new Swiper('.swiper-container_cards_lm',  {
     //     delay: 3000,
     //     disableOnnteraction: false,  
     // },
+    // centeredSlides: true,
     
     breakpoints:{
          320: {
@@ -117,11 +118,11 @@ const swiper_lm = new Swiper('.swiper-container_cards_lm',  {
         1024: {
             slidesPerView: 3,
         },
-   
-       
-        
-        
-    }
+    },
+
+    // forceOverflow: true,
+
+    // initialSlide:1,
 });
 
 
