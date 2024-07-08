@@ -22,6 +22,10 @@
     padding: 119px 93px 81px;
     column-gap: 13px;
     // background-color: ;
+    @media screen and (max-width: $bp-tablet) {
+      padding: 75px 25px 60px;
+      margin: 62px 0;
+    }
 
     @media screen and (max-width: $bp-mobile) {
       margin: 24px 10px;
@@ -35,6 +39,11 @@
       gap: 60px;
       position: relative;
       padding-left: 50px;
+      flex-grow: 1;
+
+      @media screen and (max-width: $bp-tablet) {
+        padding-left: 0px;
+      }
 
       @media screen and (max-width: $bp-mobile) {
         gap: 12px;
@@ -43,6 +52,10 @@
 
       img {
         z-index: 1;
+        @media screen and (max-width: $bp-tablet) {
+          width: 100px;
+          height: 100px;
+        }
         @media screen and (max-width: $bp-mobile) {
           width: 40px;
           height: 40px;
@@ -67,16 +80,23 @@
       top: -12%;
       z-index: 0;
       @extend %primary-font;
-      font-size: 450px;
+
       line-height: 6%;
       -webkit-text-stroke: 3px $color-brand-dark;
       // color: rgba(255, 255, 255, 0.6);
       color: rgba(1, 124, 133, 0.3);
+      font-size: calc(90px + (450 - 90) * ((100vw - 425px) / (1440 - 425)));
 
       @media screen and (max-width: 1105px) {
-        font-size: 270px;
+        // font-size: 270px;
         top: 9%;
         left: -5px;
+      }
+      @media screen and (min-width: $bp-desktop) {
+        font-size: 450px;
+      }
+      @media screen and (max-width: $bp-tablet) {
+        top: -3%;
       }
       @media screen and (max-width: $bp-mobile) {
         -webkit-text-stroke: 2px $color-brand-dark;
@@ -115,28 +135,28 @@
 
     .trust-item:nth-child(3):before {
       content: "3";
-      font-size: 380px;
+      // font-size: 380px;
       left: -60px;
       @media screen and (max-width: 1105px) {
-        font-size: 270px;
+        // font-size: 270px;
         left: -27px;
       }
       @media screen and (max-width: $bp-mobile) {
-        font-size: 80px;
+        // font-size: 80px;
         left: -25px;
       }
     }
 
     .trust-item:last-child::before {
       content: "4";
-      font-size: 380px;
+      // font-size: 380px;
       left: -60px;
       @media screen and (max-width: 1105px) {
-        font-size: 270px;
+        // font-size: 270px;
         left: -23px;
       }
       @media screen and (max-width: $bp-mobile) {
-        font-size: 80px;
+        // font-size: 80px;
       }
     }
   }

@@ -6,6 +6,7 @@
   width: 100%;
   display: flex;
   box-sizing: border-box;
+  position: relative;
 }
 
 .swiper-container_cards {
@@ -68,17 +69,17 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
-  bottom: var(--swiper-pagination-bottom, 145px);
+  bottom: var(--swiper-pagination-bottom, 80px);
   @media screen and (max-width: $bp-tablet) {
     gap: 0px;
-    bottom: var(--swiper-pagination-bottom, 80px);
+    bottom: var(--swiper-pagination-bottom, 45px);
   }
 }
 
-.cards_cruises {
+.cruises {
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     @media screen and (max-width: $bp-tablet) {
-      bottom: var(--swiper-pagination-bottom, 64px);
+      bottom: var(--swiper-pagination-bottom, 25px);
     }
   }
 }
