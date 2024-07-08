@@ -1,0 +1,111 @@
+.about-us {
+  .container > p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 80px;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 12px;
+      line-height: 133%;
+      margin: 0;
+    }
+  }
+  .advantages {
+    margin: 120px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 145px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin: 36px 0;
+      gap: 36px;
+    }
+
+    .advantage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+      @media screen and (max-width: $bp-tablet) {
+        gap: 10px;
+      }
+
+      .advantage_image {
+        // flex-grow: 1;
+        // flex-shrink: 1;
+        // flex-basis: 1;
+        max-width: 535px;
+        width: 50%;
+
+        img {
+          margin: 0 auto;
+          @media screen and (max-width: $bp-tablet) {
+            width: 75%;
+          }
+        }
+      }
+      .advantage_box {
+        // flex-grow: 1;
+        // flex-shrink: 1;
+        // flex-basis: 1;
+        max-width: 535px;
+        width: 50%;
+        background-color: $color-brand-dark;
+        color: $color-text-light;
+        padding: 55px 40px;
+        position: relative;
+        @media screen and (max-width: $bp-tablet) {
+          padding: 10px 10px;
+        }
+
+        .advantage_box_text {
+          font-size: 20px;
+          line-height: 140%;
+          font-weight: 400;
+          text-align: center;
+          @media screen and (max-width: $bp-mobile) {
+            font-size: 12px;
+            line-height: 133%;
+          }
+        }
+      }
+
+      .advantage_box::before,
+      .advantage_box::after {
+        content: "";
+        position: absolute;
+        border: 3px solid $color-brand;
+        width: 40%;
+        height: 50%;
+      }
+
+      .advantage_box::before {
+        content: "";
+        top: -25px;
+        right: -25px;
+        border-width: 3px 3px 0 0;
+        @media screen and (max-width: $bp-tablet) {
+          top: -4px;
+          right: -4px;
+          border-width: 1px 1px 0 0;
+        }
+      }
+
+      .advantage_box::after {
+        bottom: -25px;
+        left: -25px;
+        border-width: 0 0 3px 3px;
+        @media screen and (max-width: $bp-tablet) {
+          bottom: -4px;
+          left: -4px;
+          border-width: 0 0 1px 1px;
+        }
+      }
+    }
+
+    .advantage:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+}
